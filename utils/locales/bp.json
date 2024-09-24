@@ -1,0 +1,127 @@
+{
+  "common": {
+    "verify_otp": "ओटीपी सत्यापित करीं",
+    "resend_otp": "ओटीपी दोबारा भेजीं",
+    "in": "में",
+    "search": "खोजीं...",
+    "assignedTasks": "सौंपल काम",
+    "acceptedTasks": "स्वीकृत काम",
+    "completedTasks": "पूरा भइल काम",
+    "assignedTasksDescription": "यहाँ रउआ देख सकीला कि कवन-कवन काम रउआ के सौंपल गइल बा.",
+    "acceptedTasksDescription": "यहाँ रउआ देख सकीला कि कवन-कवन काम रउआ स्वीकृत कइल बा.",
+    "completedTasksDescription": "यहाँ रउआ देख सकीला कि कवन-कवन काम रउआ पूरा कइल बा.",
+    "dashboard": "डैशबोर्ड",
+    "services": "सेवाएँ",
+    "chat": "चैट",
+    "profile": "प्रोफाइल",
+    "logout": "लॉगआउट"
+  },
+  "tabs": {
+    "tabBar": {
+      "dashboard": "डैशबोर्ड",
+      "services": "सेवाएँ",
+      "chat": "चैट",
+      "profile": "प्रोफाइल"
+    }
+  },
+  "validation": {
+    "nameMin": "नाव में कम से कम 5 अक्षर होखल चाहिए",
+    "nameMax": "नाव 25 अक्षर से जियादा ना होखल चाहिए",
+    "nameRequired": "नाव जरूरी बा",
+    "phoneNumberFormat": "फोन नंबर 10 अंक के होखल चाहिए",
+    "phoneNumberRequired": "फोन नंबर जरूरी बा"
+  },
+  "dashboard": {
+    "title": "डैशबोर्ड",
+    "searchPlaceholder": "यहाँ खोजीं...",
+    "rupeeIcon": "रुपया",
+    "micIcon": "माइक्रोफोन"
+  },
+  "otp_verification": {
+    "title": "ओटीपी डालीं",
+    "incorrect_otp": "गलत ओटीपी",
+    "verification_failed": "सत्यापन असफल। कृपया फिर से प्रयास करीं.",
+    "enter_6_digit_otp": "कृपया 6 अंकी ओटीपी डालीं",
+    "failed_to_resend_otp": "ओटीपी दोबारा भेजे में असफल"
+  },
+  "signUp": {
+    "title": "साइन अप करीं",
+    "nameLabel": "नाव",
+    "namePlaceholder": "अपना नाव डालीं",
+    "nameError": "नाव में कम से कम 5 अक्षर होखल चाहिए",
+    "phoneLabel": "फोन नंबर",
+    "phonePlaceholder": "अपना फोन नंबर डालीं",
+    "phoneError": "फोन नंबर जरूर 10 अंक के होखल चाहिए",
+    "submitButton": "सौंपीं",
+    "alreadyHaveAccount": "पहिले से खाता बा? लॉग इन करीं",
+    "notificationAlreadyRegistered": "ई नंबर पहिले से रजिस्टर भइल बा."
+  },
+  "login": {
+    "title": "लॉग इन करीं",
+    "phoneNumberLabel": "फोन नंबर",
+    "phoneNumberPlaceholder": "अपना फोन नंबर डालीं",
+    "loginButton": "लॉग इन करीं",
+    "alreadyHaveAccount": "क्या रउआ के खाता ना बा? साइन इन करीं",
+    "error": "लॉगिन असफल। कृपया फिर से प्रयास करीं.",
+    "phoneNumberError": "फोन नंबर जरूर 10 अंक के होखल चाहिए"
+  },
+  "profile": {
+    "title": "प्रोफाइल",
+    "workReport": "काम रिपोर्ट",
+    "aboutUs": "हमरे बारे में",
+    "contactUs": "हमसे संपर्क करीं"
+  },
+  "myProfile": {
+    "pickAvatar": "अवतार चुनि",
+    "namePlaceholder": "नाव",
+    "emailPlaceholder": "ईमेल (ऐच्छिक)",
+    "phonePlaceholder": "फोन नंबर",
+    "localityPlaceholder": "स्थानिकता",
+    "cityPlaceholder": "शहर",
+    "statePlaceholder": "राज्य",
+    "countryPlaceholder": "देश",
+    "saveProfile": "प्रोफाइल बचाईं",
+    "errorTitle": "गलती",
+    "errorToken": "उपयोगकर्ता टोकन ना मिलल.",
+    "errorUpdate": "प्रोफाइल अपडेट में असफल.",
+    "successTitle": "सफलता",
+    "successMessage": "प्रोफाइल सफलतापूर्वक अपडेट भइल."
+  },
+  "aboutUs": {
+    "description": "हमनी के एक कंपनी बानी जा जे असाधारण सेवाएँ आ उत्पाद प्रदान करे में समर्पित बानी। हमरा लोग के मिशन बा कि हमनी के कार्य के माध्यम से दुनिया में सकारात्मक प्रभाव डाले। हम ग्राहक के अपेक्षाएँ पार करे खातिर नवाचार आ उच्चतम गुणवत्ता मानक बनाए रखे में प्रयासरत बानी। हमनी के विशेषज्ञ लोग आपन काम खातिर उत्साही बानी आ हमनी के विश्वास बा कि सहयोग आ रचनात्मकता के शक्ति के माध्यम से सफलता प्राप्त कइल जा सकेला। हमनी के यात्रा में शामिल होखीं जइसे हम आगे बढ़ीला आ एक महत्वपूर्ण बदलाव लावे के कोशिश करीला।"
+  },
+  "contactUs": {
+    "placeholder": "रउआ संदेश",
+    "send": "भेजीं"
+  },
+  "onboarding": {
+    "find_person": "काम खातिर केहू ना मिलल",
+    "work_new_places": "नवीन जगह पर काम करे के इच्छा",
+    "digital_confidence": "डिजिटल तकनीक में विश्वास ना"
+  },
+  "myServices": {
+    "services": {
+      "headerText": "सेवाएँ",
+      "searchPlaceholder": "सेवाएँ खोजीं...",
+      "addNewService": "नई सेवा जोड़ल",
+      "serviceName": "नाम",
+      "serviceDescription": "वर्णन",
+      "noServicesText": "अभी तक कोई सेवा नहीं जोड़ी गई.",
+      "deleteConfirmation": "का रउआ सचमुच ई सेवा हटावे चाहत बानी?",
+      "confirm": "हाँ",
+      "cancel": "नहीं"
+    },
+    "buttons": {
+      "addService": "नई सेवा जोड़ल",
+      "editService": "संपादित करीं",
+      "deleteService": "हटाईं",
+      "mic": "माइक्रोफोन"
+    },
+    "modal": {
+      "deleteConfirmation": "का रउआ यकीन बानी कि रउआ ई सेवा हटावे चाहत बानी?"
+    },
+    "loading": {
+      "loadingMessage": "सेवाएँ लोड हो रहल बाड़ीं..."
+    }
+  }
+}

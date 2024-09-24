@@ -1,0 +1,127 @@
+{
+  "common": {
+    "verify_otp": "ওটিপি যাচাই করুন",
+    "resend_otp": "ওটিপি পুনরায় পাঠান",
+    "in": "মধ্যে",
+    "search": "অনুসন্ধান করুন...",
+    "assignedTasks": "অসাইন করা কাজ",
+    "acceptedTasks": "গৃহীত কাজ",
+    "completedTasks": "সম্পন্ন কাজ",
+    "assignedTasksDescription": "এখানে আপনি দেখতে পারেন যে আপনাকে কিভাবে কাজ নির্ধারণ করা হয়েছে।",
+    "acceptedTasksDescription": "এখানে আপনি দেখতে পারেন যে আপনি কি কি কাজ গ্রহণ করেছেন।",
+    "completedTasksDescription": "এখানে আপনি দেখতে পারেন যে আপনি কি কি কাজ সম্পন্ন করেছেন।",
+    "dashboard": "ড্যাশবোর্ড",
+    "services": "সেবাসমূহ",
+    "chat": "চ্যাট",
+    "profile": "প্রোফাইল",
+    "logout": "লগ আউট"
+  },
+  "tabs": {
+    "tabBar": {
+      "dashboard": "ড্যাশবোর্ড",
+      "services": "সেবাসমূহ",
+      "chat": "চ্যাট",
+      "profile": "প্রোফাইল"
+    }
+  },
+  "validation": {
+    "nameMin": "নামের অন্তত ৫টি অক্ষর থাকতে হবে",
+    "nameMax": "নাম ২৫টি অক্ষরের বেশি হতে পারে না",
+    "nameRequired": "নাম প্রয়োজন",
+    "phoneNumberFormat": "ফোন নম্বর ১০ সংখ্যার হতে হবে",
+    "phoneNumberRequired": "ফোন নম্বর প্রয়োজন"
+  },
+  "dashboard": {
+    "title": "ড্যাশবোর্ড",
+    "searchPlaceholder": "এখানে অনুসন্ধান করুন...",
+    "rupeeIcon": "রুপি",
+    "micIcon": "মাইক্রোফোন"
+  },
+  "otp_verification": {
+    "title": "ওটিপি দিন",
+    "incorrect_otp": "ভুল ওটিপি",
+    "verification_failed": "যাচাইকরণ ব্যর্থ। আবার চেষ্টা করুন।",
+    "enter_6_digit_otp": "দয়া করে একটি ৬ অঙ্কের ওটিপি দিন",
+    "failed_to_resend_otp": "ওটিপি পুনরায় পাঠাতে ব্যর্থ"
+  },
+  "signUp": {
+    "title": "সাইন আপ করুন",
+    "nameLabel": "নাম",
+    "namePlaceholder": "আপনার নাম লিখুন",
+    "nameError": "নামের অন্তত ৫টি অক্ষর থাকতে হবে",
+    "phoneLabel": "ফোন নম্বর",
+    "phonePlaceholder": "আপনার ফোন নম্বর লিখুন",
+    "phoneError": "ফোন নম্বর অবশ্যই ১০ সংখ্যার হতে হবে",
+    "submitButton": "জমা দিন",
+    "alreadyHaveAccount": "আগেই কি আপনার একটি অ্যাকাউন্ট আছে? লগ ইন করুন",
+    "notificationAlreadyRegistered": "এই নম্বরটি আগে থেকেই নিবন্ধিত।"
+  },
+  "login": {
+    "title": "লগ ইন করুন",
+    "phoneNumberLabel": "ফোন নম্বর",
+    "phoneNumberPlaceholder": "আপনার ফোন নম্বর লিখুন",
+    "loginButton": "লগ ইন করুন",
+    "alreadyHaveAccount": "আপনার কি একটি অ্যাকাউন্ট নেই? সাইন ইন করুন",
+    "error": "লগইন ব্যর্থ। আবার চেষ্টা করুন।",
+    "phoneNumberError": "ফোন নম্বর অবশ্যই ১০ সংখ্যার হতে হবে"
+  },
+  "profile": {
+    "title": "প্রোফাইল",
+    "workReport": "কাজের রিপোর্ট",
+    "aboutUs": "আমাদের সম্পর্কে",
+    "contactUs": "আমাদের যোগাযোগ করুন"
+  },
+  "myProfile": {
+    "pickAvatar": "অ্যাভাটার বাছুন",
+    "namePlaceholder": "নাম",
+    "emailPlaceholder": "ইমেইল (ঐচ্ছিক)",
+    "phonePlaceholder": "ফোন নম্বর",
+    "localityPlaceholder": "অঞ্চল",
+    "cityPlaceholder": "শহর",
+    "statePlaceholder": "রাজ্য",
+    "countryPlaceholder": "দেশ",
+    "saveProfile": "প্রোফাইল সংরক্ষণ করুন",
+    "errorTitle": "ত্রুটি",
+    "errorToken": "ব্যবহারকারীর টোকেন পাওয়া যায়নি।",
+    "errorUpdate": "প্রোফাইল আপডেট করতে ব্যর্থ।",
+    "successTitle": "সাফল্য",
+    "successMessage": "প্রোফাইল সফলভাবে আপডেট হয়েছে।"
+  },
+  "aboutUs": {
+    "description": "আমরা একটি কোম্পানি যা অসাধারণ সেবা এবং পণ্য প্রদান করতে প্রতিশ্রুতিবদ্ধ। আমাদের লক্ষ্য হল আমাদের কাজের মাধ্যমে বিশ্বের উপর ইতিবাচক প্রভাব ফেলা। আমরা গ্রাহকদের প্রত্যাশা ছাড়িয়ে যেতে এবং সর্বোচ্চ মানের মান বজায় রাখতে উদ্ভাবনের চেষ্টা করি। আমাদের বিশেষজ্ঞ দলের সদস্যরা তাদের কাজের প্রতি উত্সাহী এবং আমরা সফলতার জন্য সহযোগিতা এবং সৃজনশীলতার শক্তিতে বিশ্বাস করি। আমাদের সাথে যোগ দিন যখন আমরা এগিয়ে চলছি এবং একটি অর্থপূর্ণ পরিবর্তন আনার চেষ্টা করছি।"
+  },
+  "contactUs": {
+    "placeholder": "আপনার বার্তা",
+    "send": "পাঠান"
+  },
+  "onboarding": {
+    "find_person": "কাজের জন্য কাউকে খুঁজে পেতে ব্যর্থ",
+    "work_new_places": "নতুন জায়গায় কাজ করার ইচ্ছা",
+    "digital_confidence": "ডিজিটাল প্রযুক্তিতে আত্মবিশ্বাস নেই"
+  },
+  "myServices": {
+    "services": {
+      "headerText": "সেবাসমূহ",
+      "searchPlaceholder": "সেবা খুঁজুন...",
+      "addNewService": "নতুন সেবা যোগ করুন",
+      "serviceName": "নাম",
+      "serviceDescription": "বিবরণ",
+      "noServicesText": "এখনো কোনো সেবা যোগ করা হয়নি।",
+      "deleteConfirmation": "আপনি কি সত্যিই এই সেবা মুছতে চান?",
+      "confirm": "হ্যাঁ",
+      "cancel": "না"
+    },
+    "buttons": {
+      "addService": "নতুন সেবা যোগ করুন",
+      "editService": "সম্পাদনা করুন",
+      "deleteService": "মুছুন",
+      "mic": "মাইক্রোফোন"
+    },
+    "modal": {
+      "deleteConfirmation": "আপনি কি নিশ্চিত যে আপনি এই সেবা মুছতে চান?"
+    },
+    "loading": {
+      "loadingMessage": "সেবাসমূহ লোড হচ্ছে..."
+    }
+  }
+}

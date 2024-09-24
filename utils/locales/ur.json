@@ -1,0 +1,127 @@
+{
+  "common": {
+    "verify_otp": "OTP کی تصدیق کریں",
+    "resend_otp": "OTP دوبارہ بھیجیں",
+    "in": "میں",
+    "search": "تلاش کریں...",
+    "assignedTasks": "تفویض کردہ کام",
+    "acceptedTasks": "قبول کردہ کام",
+    "completedTasks": "مکمل شدہ کام",
+    "assignedTasksDescription": "یہاں آپ کو تفویض کردہ کام نظر آئیں گے.",
+    "acceptedTasksDescription": "یہاں آپ کو قبول کردہ کام نظر آئیں گے.",
+    "completedTasksDescription": "یہاں آپ کو مکمل شدہ کام نظر آئیں گے.",
+    "dashboard": "ڈیش بورڈ",
+    "services": "خدمات",
+    "chat": "چیٹ",
+    "profile": "پروفائل",
+    "logout": "لاگ آؤٹ"
+  },
+  "tabs": {
+    "tabBar": {
+      "dashboard": "ڈیش بورڈ",
+      "services": "خدمات",
+      "chat": "چیٹ",
+      "profile": "پروفائل"
+    }
+  },
+  "validation": {
+    "nameMin": "نام کم از کم 5 حروف پر مشتمل ہونا چاہیے",
+    "nameMax": "نام 25 حروف سے زیادہ نہیں ہو سکتا",
+    "nameRequired": "نام ضروری ہے",
+    "phoneNumberFormat": "فون نمبر 10 digits پر مشتمل ہونا چاہیے",
+    "phoneNumberRequired": "فون نمبر ضروری ہے"
+  },
+  "dashboard": {
+    "title": "ڈیش بورڈ",
+    "searchPlaceholder": "یہاں تلاش کریں...",
+    "rupeeIcon": "روپیہ",
+    "micIcon": "مائیک"
+  },
+  "otp_verification": {
+    "title": "OTP درج کریں",
+    "incorrect_otp": "غلط OTP",
+    "verification_failed": "تصدیق ناکام۔ براہ کرم دوبارہ کوشش کریں.",
+    "enter_6_digit_otp": "براہ کرم 6 ہندسوں کا OTP درج کریں",
+    "failed_to_resend_otp": "OTP دوبارہ بھیجنے میں ناکامی"
+  },
+  "signUp": {
+    "title": "سائن اپ",
+    "nameLabel": "نام",
+    "namePlaceholder": "اپنا نام درج کریں",
+    "nameError": "نام کم از کم 5 حروف پر مشتمل ہونا چاہیے",
+    "phoneLabel": "فون نمبر",
+    "phonePlaceholder": "اپنا فون نمبر درج کریں",
+    "phoneError": "فون نمبر 10 ہندسوں پر مشتمل ہونا چاہیے",
+    "submitButton": "جمع کروائیں",
+    "alreadyHaveAccount": "کیا آپ کے پاس پہلے سے اکاؤنٹ ہے؟ لاگ ان کریں",
+    "notificationAlreadyRegistered": "یہ نمبر پہلے ہی رجسٹرڈ ہے."
+  },
+  "login": {
+    "title": "لاگ ان",
+    "phoneNumberLabel": "فون نمبر",
+    "phoneNumberPlaceholder": "اپنا فون نمبر درج کریں",
+    "loginButton": "لاگ ان",
+    "alreadyHaveAccount": "کیا آپ کے پاس اکاؤنٹ نہیں ہے؟ سائن اپ کریں",
+    "error": "لاگ ان ناکام۔ براہ کرم دوبارہ کوشش کریں.",
+    "phoneNumberError": "فون نمبر 10 ہندسوں پر مشتمل ہونا چاہیے"
+  },
+  "profile": {
+    "title": "پروفائل",
+    "workReport": "کام کی رپورٹ",
+    "aboutUs": "ہمارے بارے میں",
+    "contactUs": "ہم سے رابطہ کریں"
+  },
+  "myProfile": {
+    "pickAvatar": "اوتار منتخب کریں",
+    "namePlaceholder": "نام",
+    "emailPlaceholder": "ای میل (اختیاری)",
+    "phonePlaceholder": "فون نمبر",
+    "localityPlaceholder": "علاقہ",
+    "cityPlaceholder": "شہر",
+    "statePlaceholder": "ریاست",
+    "countryPlaceholder": "ملک",
+    "saveProfile": "پروفائل محفوظ کریں",
+    "errorTitle": "غلطی",
+    "errorToken": "صارف کا ٹوکن نہیں ملا.",
+    "errorUpdate": "پروفائل کو اپ ڈیٹ کرنے میں ناکامی.",
+    "successTitle": "کامیابی",
+    "successMessage": "پروفائل کامیابی سے اپ ڈیٹ ہو گئی."
+  },
+  "aboutUs": {
+    "description": "ہم ایک ایسی کمپنی ہیں جو خصوصی خدمات اور مصنوعات فراہم کرنے کے لئے وقف ہیں۔ ہمارا مقصد دنیا میں مثبت اثر ڈالنا ہے۔ ہم اپنے کام کے ذریعے صارفین کی توقعات سے تجاوز کرنے اور اعلیٰ ترین معیار کو برقرار رکھنے کی کوشش کرتے ہیں۔ ہمارے ماہرین کی ٹیم اپنے کام کے بارے میں پرجوش ہے، اور ہم تعاون اور تخلیقی صلاحیتوں کی طاقت پر یقین رکھتے ہیں۔ ہمارے ساتھ شامل ہوں جیسے ہی ہم بڑھتے ہیں اور ایک معنی خیز تبدیلی لاتے ہیں."
+  },
+  "contactUs": {
+    "placeholder": "آپ کا پیغام",
+    "send": "بھیجیں"
+  },
+  "onboarding": {
+    "find_person": "کام کے لئے کسی کو تلاش کرنے میں ناکامی",
+    "work_new_places": "نئے مقامات پر کام کرنے کی خواہش",
+    "digital_confidence": "ڈیجیٹل ٹیکنالوجی میں اعتماد نہیں"
+  },
+  "myServices": {
+    "services": {
+      "headerText": "خدمات",
+      "searchPlaceholder": "خدمات تلاش کریں...",
+      "addNewService": "نئی خدمت شامل کریں",
+      "serviceName": "نام",
+      "serviceDescription": "تفصیل",
+      "noServicesText": "اب تک کوئی خدمات شامل نہیں کی گئی ہیں.",
+      "deleteConfirmation": "کیا آپ اس خدمت کو حذف کرنا چاہتے ہیں؟",
+      "confirm": "جی ہاں",
+      "cancel": "نہیں"
+    },
+    "buttons": {
+      "addService": "نئی خدمت شامل کریں",
+      "editService": "ترمیم کریں",
+      "deleteService": "حذف کریں",
+      "mic": "مائیک"
+    },
+    "modal": {
+      "deleteConfirmation": "کیا آپ اس خدمت کو حذف کرنا چاہتے ہیں؟"
+    },
+    "loading": {
+      "loadingMessage": "خدمات لوڈ ہو رہی ہیں..."
+    }
+  }
+}

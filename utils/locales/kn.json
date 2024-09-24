@@ -1,0 +1,127 @@
+{
+  "common": {
+    "verify_otp": "OTP ಅನ್ನು ದೃಢೀಕರಿಸಿ",
+    "resend_otp": "OTP ಅನ್ನು ಪುನಃ ಕಳುಹಿಸಿ",
+    "in": "ನೀDentro",
+    "search": "ಹುಡುಕಿ ಬಿಡಿ...",
+    "assignedTasks": "ನಿಯಮಿತ ಕಾರ್ಯಗಳು",
+    "acceptedTasks": "ಸ್ವೀಕರಿಸಿದ ಕಾರ್ಯಗಳು",
+    "completedTasks": "ಪೂರ್ಣವಾದ ಕಾರ್ಯಗಳು",
+    "assignedTasksDescription": "ಇಲ್ಲಿ ನೀವು ನಿಮ್ಮ ಮೇಲೆ ನಿಯೋಜಿತ ಕಾರ್ಯಗಳನ್ನು ನೋಡಿ.",
+    "acceptedTasksDescription": "ಇಲ್ಲಿ ನೀವು ಸ್ವೀಕರಿಸಿದ ಕಾರ್ಯಗಳನ್ನು ನೋಡಿ.",
+    "completedTasksDescription": "ಇಲ್ಲಿ ನೀವು ಪೂರ್ಣಗೊಳಿಸಿದ ಕಾರ್ಯಗಳನ್ನು ನೋಡಿ.",
+    "dashboard": "ಡ್ಯಾಶ್‌ಬೋರ್ಡ್",
+    "services": "ಸೇವೆಗಳು",
+    "chat": "ಚಾಟ್",
+    "profile": "ಪ್ರೊಫೈಲ್",
+    "logout": "ಲಾಗ್ ಔಟ್"
+  },
+  "tabs": {
+    "tabBar": {
+      "dashboard": "ಡ್ಯಾಶ್‌ಬೋರ್ಡ್",
+      "services": "ಸೇವೆಗಳು",
+      "chat": "ಚಾಟ್",
+      "profile": "ಪ್ರೊಫೈಲ್"
+    }
+  },
+  "validation": {
+    "nameMin": "ಹೆಸರು ಕನಿಷ್ಠ 5 ಅಕ್ಷರಗಳನ್ನು ಹೊಂದಿರಬೇಕು",
+    "nameMax": "ಹೆಸರು 25 ಅಕ್ಷರಗಳನ್ನು ಮೀರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ",
+    "nameRequired": "ಹೆಸರು ಅಗತ್ಯ",
+    "phoneNumberFormat": "ದೂರವಾಣಿ ಸಂಖ್ಯೆ 10 ಅಂಕಿಗಳಾಗಿರಬೇಕು",
+    "phoneNumberRequired": "ದೂರವಾಣಿ ಸಂಖ್ಯೆ ಅಗತ್ಯ"
+  },
+  "dashboard": {
+    "title": "ಡ್ಯಾಶ್‌ಬೋರ್ಡ್",
+    "searchPlaceholder": "ಇಲ್ಲಿ ಹುಡುಕಿ...",
+    "rupeeIcon": "ರೂಪಾಯಿ",
+    "micIcon": "ಮೈಕ್"
+  },
+  "otp_verification": {
+    "title": "OTP ಅನ್ನು ನಮೂದಿಸಿ",
+    "incorrect_otp": "ತಪ್ಪಾದ OTP",
+    "verification_failed": "ದೃಢೀಕರಣ ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
+    "enter_6_digit_otp": "ದಯವಿಟ್ಟು 6 ಅಂಕಿಗಳ OTP ಅನ್ನು ನಮೂದಿಸಿ",
+    "failed_to_resend_otp": "OTP ಅನ್ನು ಪುನಃ ಕಳುಹಿಸಲು ವಿಫಲವಾಗಿದೆ"
+  },
+  "signUp": {
+    "title": "ಸೈನ್ ಅಪ್",
+    "nameLabel": "ಹೆಸರು",
+    "namePlaceholder": "ನಿಮ್ಮ ಹೆಸರನ್ನು ನಮೂದಿಸಿ",
+    "nameError": "ಹೆಸರು ಕನಿಷ್ಠ 5 ಅಕ್ಷರಗಳನ್ನು ಹೊಂದಿರಬೇಕು",
+    "phoneLabel": "ದೂರವಾಣಿ ಸಂಖ್ಯೆ",
+    "phonePlaceholder": "ನಿಮ್ಮ ದೂರವಾಣಿ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ",
+    "phoneError": "ದೂರವಾಣಿ ಸಂಖ್ಯೆ ಖಚಿತವಾಗಿ 10 ಅಂಕಿಗಳಾಗಿರಬೇಕು",
+    "submitButton": "ಸುಪರಿಗ್ರಹಿಸು",
+    "alreadyHaveAccount": "ಹಾಗಾದರೆ ನೀವು ಖಾತೆ ಹೊಂದಿದ್ದೀರಾ? ಲಾಗ್ ಇನ್ ಮಾಡಿ",
+    "notificationAlreadyRegistered": "ಈ ಸಂಖ್ಯೆ ಈಗಾಗಲೇ ನೋಂದಾಯಿಸಲಾಗಿದೆ."
+  },
+  "login": {
+    "title": "ಲಾಗ್ ಇನ್",
+    "phoneNumberLabel": "ದೂರವಾಣಿ ಸಂಖ್ಯೆ",
+    "phoneNumberPlaceholder": "ನಿಮ್ಮ ದೂರವಾಣಿ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ",
+    "loginButton": "ಲಾಗ್ ಇನ್",
+    "alreadyHaveAccount": "ನಿಮ್ಮ ಖಾತೆ ಇಲ್ಲವೇ? ಸೈನ್ ಅಪ್ ಮಾಡಿ",
+    "error": "ಲಾಗ್ ಇನ್ ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
+    "phoneNumberError": "ದೂರವಾಣಿ ಸಂಖ್ಯೆ ಖಚಿತವಾಗಿ 10 ಅಂಕಿಗಳಾಗಿರಬೇಕು"
+  },
+  "profile": {
+    "title": "ಪ್ರೊಫೈಲ್",
+    "workReport": "ಕೆಲಸದ ವರದಿ",
+    "aboutUs": "ನಮ್ಮ ಬಗ್ಗೆ",
+    "contactUs": "ನಮಗೆ ಸಂಪರ್ಕಿಸಿ"
+  },
+  "myProfile": {
+    "pickAvatar": "ಅವತಾರ ಆಯ್ಕೆ ಮಾಡಿ",
+    "namePlaceholder": "ಹೆಸರು",
+    "emailPlaceholder": "ಇಮೇಲ್ (ಐಚ್ಛಿಕ)",
+    "phonePlaceholder": "ದೂರವಾಣಿ ಸಂಖ್ಯೆ",
+    "localityPlaceholder": "ಸ್ಥಳ",
+    "cityPlaceholder": "ನಗರ",
+    "statePlaceholder": "ರಾಜ್ಯ",
+    "countryPlaceholder": "ದೇಶ",
+    "saveProfile": "ಪ್ರೊಫೈಲ್ ಉಳಿಸಿ",
+    "errorTitle": "ದೋಷ",
+    "errorToken": "ಬಳಕೆದಾರ ಟೋಕನ್ ದೊರಕಲಿಲ್ಲ.",
+    "errorUpdate": "ಪ್ರೊಫೈಲ್ ನವೀಕರಿಸುವಲ್ಲಿ ವಿಫಲವಾಗಿದೆ.",
+    "successTitle": "ಯಶಸ್ಸು",
+    "successMessage": "ಪ್ರೊಫೈಲ್ ಯಶಸ್ವಿಯಾಗಿ ನವೀಕರಿಸಲಾಗಿದೆ."
+  },
+  "aboutUs": {
+    "description": "ನಾವು ವಿಶೇಷ ಸೇವೆಗಳು ಮತ್ತು ಉತ್ಪನ್ನಗಳನ್ನು ನೀಡಲು ಸಮರ್ಪಿತ ಕಂಪನಿಯಾಗಿದೆ. ನಮ್ಮ ಉದ್ದೇಶವು ಜಗತ್ತಿನಲ್ಲಿ ಸಕಾರಾತ್ಮಕ ಪರಿಣಾಮ ಬೀರುವುದಾಗಿದೆ. ನಾವು ನಮ್ಮ ಕೆಲಸದ ಮೂಲಕ ಗ್ರಾಹಕರ ನಿರೀಕ್ಷೆಗಳನ್ನು ಮೀರಿಸಲು ಮತ್ತು ಅತ್ಯುತ್ತಮ ಗುಣಮಟ್ಟದ ಪ್ರಮಾಣವನ್ನು ನಿರ್ವಹಿಸಲು ಪ್ರಯತ್ನಿಸುತ್ತೇವೆ. ನಮ್ಮ ಪರಿಣತಿಗಳ ತಂಡವು ತಮ್ಮ ಕೆಲಸದ ಬಗ್ಗೆ ಉತ್ಸಾಹದಿಂದ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿದೆ, ಮತ್ತು ನಾವು ಸಹಕಾರ ಮತ್ತು ಸೃಜನಾತ್ಮಕತೆಯ ಶಕ್ತೆಯಲ್ಲಿ ನಂಬಿಕೆ ಇಟ್ಟುಕೊಂಡಿದ್ದೇವೆ. ನಾವು ಬೆಳೆಯುತ್ತಿರುವಂತೆ ಮತ್ತು ಅರ್ಥಪೂರ್ಣ ಬದಲಾವಣೆಗಳನ್ನು ಮಾಡಲು ನಾವು ಮುಂದುವರಿಸುತ್ತಿದ್ದೇವೆ."
+  },
+  "contactUs": {
+    "placeholder": "ನಿಮ್ಮ ಸಂದೇಶ",
+    "send": "ಕಳುಹಿಸಿ"
+  },
+  "onboarding": {
+    "find_person": "ಕಾರ್ಯಕ್ಕಾಗಿ ಯಾರನ್ನಾದರೂ ಕಾಣಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ",
+    "work_new_places": "ಹೊಸ ಸ್ಥಳಗಳಲ್ಲಿ ಕೆಲಸ ಮಾಡಲು ಬಯಸುತ್ತೇನೆ",
+    "digital_confidence": "ಡಿಜಿಟಲ್ ತಂತ್ರಜ್ಞಾನದಲ್ಲಿ ವಿಶ್ವಾಸವಿಲ್ಲ"
+  },
+  "myServices": {
+    "services": {
+      "headerText": "ಸೇವೆಗಳು",
+      "searchPlaceholder": "ಸೇವೆಗಳನ್ನು ಹುಡುಕಿ...",
+      "addNewService": "ಹೊಸ ಸೇವೆ ಸೇರಿಸಿ",
+      "serviceName": "ಹೆಸರು",
+      "serviceDescription": "ವಿವರಣೆ",
+      "noServicesText": "ಈಗಾಗಲೇ ಯಾವುದೇ ಸೇವೆಗಳನ್ನು ಸೇರಿಸಲಾಗಿಲ್ಲ.",
+      "deleteConfirmation": "ನೀವು ಈ ಸೇವೆಯನ್ನು ಅಳಿಸಲು ಬಯಸುತ್ತೀರಾ?",
+      "confirm": "ಹೌದು",
+      "cancel": "ಇಲ್ಲ"
+    },
+    "buttons": {
+      "addService": "ಹೊಸ ಸೇವೆ ಸೇರಿಸಿ",
+      "editService": "ಸಂಪಾದಿಸಿ",
+      "deleteService": "ಅಳಿಸಿ",
+      "mic": "ಮೈಕ್"
+    },
+    "modal": {
+      "deleteConfirmation": "ನೀವು ಈ ಸೇವೆಯನ್ನು ಅಳಿಸಲು ಬಯಸುತ್ತೀರಾ?"
+    },
+    "loading": {
+      "loadingMessage": "ಸೇವೆಗಳು ಲೋಡ್ ಆಗುತ್ತಿದೆ..."
+    }
+  }
+}

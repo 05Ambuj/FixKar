@@ -1,0 +1,127 @@
+{
+  "common": {
+    "verify_otp": "ઓટીપી સત્યાપિત કરો",
+    "resend_otp": "ઓટીપી ફરીથી મોકલાવો",
+    "in": "માં",
+    "search": "શોધો...",
+    "assignedTasks": "મુડવામા કાર્ય",
+    "acceptedTasks": "ગૃહિત કાર્ય",
+    "completedTasks": "પૂર્ણ થયેલ કાર્ય",
+    "assignedTasksDescription": "અહીં તમે જોઈ શકો છો કે કયા કાર્ય તમારે સોંપેલા છે.",
+    "acceptedTasksDescription": "અહીં તમે જોઈ શકો છો કે કયા કાર્ય તમે સ્વીકૃત કર્યા છે.",
+    "completedTasksDescription": "અહીં તમે જોઈ શકો છો કે કયા કાર્ય તમે પૂર્ણ કર્યા છે.",
+    "dashboard": "ડેશબોર્ડ",
+    "services": "સેવાઓ",
+    "chat": "ચેટ",
+    "profile": "પ્રોફાઇલ",
+    "logout": "લોગ આઉટ"
+  },
+  "tabs": {
+    "tabBar": {
+      "dashboard": "ડેશબોર્ડ",
+      "services": "સેવાઓ",
+      "chat": "ચેટ",
+      "profile": "પ્રોફાઇલ"
+    }
+  },
+  "validation": {
+    "nameMin": "નામમાં ઓછામાં ઓછા 5 અક્ષરો હોવા જોઈએ",
+    "nameMax": "નામ 25 અક્ષરોની મર્યાદામાં હોવું જોઈએ",
+    "nameRequired": "નામ આવશ્યક છે",
+    "phoneNumberFormat": "ફોન નંબર 10 અંકનો હોવો જોઈએ",
+    "phoneNumberRequired": "ફોન નંબર આવશ્યક છે"
+  },
+  "dashboard": {
+    "title": "ડેશબોર્ડ",
+    "searchPlaceholder": "અહીં શોધો...",
+    "rupeeIcon": "રૂપિયા",
+    "micIcon": "માઇક્રોફોન"
+  },
+  "otp_verification": {
+    "title": "ઓટીપી દાખલ કરો",
+    "incorrect_otp": "ભુલ ઓટીપી",
+    "verification_failed": "સત્યાપન નિષ્ફળ. કૃપા કરીને ફરીથી પ્રયાસ કરો.",
+    "enter_6_digit_otp": "કૃપા કરીને 6 અંકનો ઓટીપી દાખલ કરો",
+    "failed_to_resend_otp": "ઓટીપી ફરીથી મોકલવામાં નિષ્ફળ"
+  },
+  "signUp": {
+    "title": "સાઇન અપ કરો",
+    "nameLabel": "નામ",
+    "namePlaceholder": "તમારું નામ દાખલ કરો",
+    "nameError": "નામમાં ઓછામાં ઓછા 5 અક્ષરો હોવા જોઈએ",
+    "phoneLabel": "ફોન નંબર",
+    "phonePlaceholder": "તમારો ફોન નંબર દાખલ કરો",
+    "phoneError": "ફોન નંબર ચોક્કસ 10 અંકનો હોવો જોઈએ",
+    "submitButton": "જમાવવો",
+    "alreadyHaveAccount": "પહેલેથી એક ખાતું છે? લોગ ઇન કરો",
+    "notificationAlreadyRegistered": "આ નંબર અગાઉથી નોંધાયેલા છે."
+  },
+  "login": {
+    "title": "લોગ ઇન કરો",
+    "phoneNumberLabel": "ફોન નંબર",
+    "phoneNumberPlaceholder": "તમારો ફોન નંબર દાખલ કરો",
+    "loginButton": "લોગ ઇન કરો",
+    "alreadyHaveAccount": "શું તમારે એક ખાતું નથી? સાઇન ઇન કરો",
+    "error": "લોગિન નિષ્ફળ. કૃપા કરીને ફરીથી પ્રયાસ કરો.",
+    "phoneNumberError": "ફોન નંબર ચોક્કસ 10 અંકનો હોવો જોઈએ"
+  },
+  "profile": {
+    "title": "પ્રોફાઇલ",
+    "workReport": "કાર્ય રિપોર્ટ",
+    "aboutUs": "અમારા વિશે",
+    "contactUs": "અમને સંપર્ક કરો"
+  },
+  "myProfile": {
+    "pickAvatar": "એવતાર પસંદ કરો",
+    "namePlaceholder": "નામ",
+    "emailPlaceholder": "ઈમેલ (વૈકલ્પિક)",
+    "phonePlaceholder": "ફોન નંબર",
+    "localityPlaceholder": "સ્થાનિકતા",
+    "cityPlaceholder": "શહેર",
+    "statePlaceholder": "રાજ્ય",
+    "countryPlaceholder": "દેશ",
+    "saveProfile": "પ્રોફાઇલ સાચવો",
+    "errorTitle": "ભુલ",
+    "errorToken": "વપરાશકર્તા ટોકન મળી ન આવ્યું.",
+    "errorUpdate": "પ્રોફાઇલ અપડેટ કરવામાં નિષ્ફળ.",
+    "successTitle": "સફળતા",
+    "successMessage": "પ્રોફાઇલ સફળતાપૂર્વક અપડેટ થઈ."
+  },
+  "aboutUs": {
+    "description": "અમે એક કંપની છીએ જે અસાધારણ સેવાઓ અને ઉત્પાદનો પૂરી પાડવામાં સમર્પિત છે. અમારી મિશન એ છે કે અમે અમારી કાર્ય દ્વારા વિશ્વમાં સકારાત્મક અસર મૂકવા પ્રયત્ન કરીએ છીએ. અમે નવપરિવર્તક ઉકેલો આપીને અને ગુણવત્તાના ઉચ્ચતમ ધોરણોને જાળવી રાખીને ગ્રાહકની અપેક્ષાઓને અનુરૂપ થવા માટે પ્રયત્નશીલ છીએ. અમારી નિષ્ણાતોની ટીમ તેમનામાં ઉત્સાહી છે અને અમે સફળતા માટે સહકાર અને સર્જનાત્મકતાના શક્તિમાં વિશ્વાસ કરીએ છીએ. અમારી સાથે જોડાઓ જ્યારે અમે આગળ વધીએ છીએ અને એક મહત્વપૂર્ણ ફેરફાર લાવવાની કોશિશ કરીએ છીએ."
+  },
+  "contactUs": {
+    "placeholder": "તમારો સંદેશ",
+    "send": "મોકલો"
+  },
+  "onboarding": {
+    "find_person": "કાર્ય માટે કોણે શોધવામાં નિષ્ફળ",
+    "work_new_places": "નવી જગ્યાઓમાં કાર્ય કરવાની ઇચ્છા",
+    "digital_confidence": "ડિજિટલ ટેકનિકમાં કોઇ આત્મવિશ્વાસ નથી"
+  },
+  "myServices": {
+    "services": {
+      "headerText": "સેવાઓ",
+      "searchPlaceholder": "સેવાઓ શોધો...",
+      "addNewService": "નવી સેવા ઉમેરો",
+      "serviceName": "નામ",
+      "serviceDescription": "વર્ણન",
+      "noServicesText": "હવે સુધી કોઈ સેવા ઉમેરાઈ નથી.",
+      "deleteConfirmation": "શું તમે આ સેવા દૂર કરવા માગો છો?",
+      "confirm": "હા",
+      "cancel": "ના"
+    },
+    "buttons": {
+      "addService": "નવી સેવા ઉમેરો",
+      "editService": "સંપાદિત કરો",
+      "deleteService": "કાઢો",
+      "mic": "માઇક્રોફોન"
+    },
+    "modal": {
+      "deleteConfirmation": "શું તમે ખાતરી છે કે તમે આ સેવા દૂર કરવા માંગો છો?"
+    },
+    "loading": {
+      "loadingMessage": "સેવાઓ લોડ થઈ રહી છે..."
+    }
+  }
+}

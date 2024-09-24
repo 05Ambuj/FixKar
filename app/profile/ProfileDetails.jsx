@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, Image, StyleSheet, ScrollView } from 'react-native';
+import { useTranslation } from 'react-i18next'; // Import useTranslation for localization
 import { getItem } from '../../utils/AsyncStorage';
 
 const ProfileDetails = () => {
+  const { t } = useTranslation(); // Initialize translation hook
   const [profileData, setProfileData] = useState({
     name: '',
     email: '',
@@ -18,15 +20,11 @@ const ProfileDetails = () => {
 
   const fetchProfileData = async () => {
     try {
-      const token = await getItem('token'); // Fetch token if required
+      const token = await getItem('token');
       if (token) {
-        // Optionally, you could fetch the profile data from the server using the token
-        // const response = await axios.get('https://fixkar.onrender.com/getProfile', {
-        //   headers: { Authorization: `Bearer ${token}` },
-        // });
-        // setProfileData(response.data);
+        // Fetch profile data logic
       }
-      const savedProfile = await getItem('profile'); // Fetch profile data from AsyncStorage
+      const savedProfile = await getItem('profile');
       if (savedProfile) {
         setProfileData(JSON.parse(savedProfile));
       }
@@ -46,20 +44,20 @@ const ProfileDetails = () => {
           <Image source={{ uri: profileData.profileAvatar }} style={styles.avatar} />
         ) : (
           <View style={styles.avatarPlaceholder}>
-            <Text style={styles.avatarText}>No Avatar</Text>
+            <Text style={styles.avatarText}>{t('myProfile.noAvatar')}</Text>
           </View>
         )}
-        <Text style={styles.name}>{profileData.name || 'N/A'}</Text>
+        <Text style={styles.name}>{profileData.name || t('myProfile.noName')}</Text>
         {profileData.email ? <Text style={styles.email}>{profileData.email}</Text> : null}
-        <Text style={styles.phone}>Phone: {profileData.phone || 'N/A'}</Text>
+        <Text style={styles.phone}>{t('myProfile.phone')}: {profileData.phone || t('myProfile.noPhone')}</Text>
       </View>
 
       <View style={styles.addressSection}>
-        <Text style={styles.addressTitle}>Address</Text>
-        <Text style={styles.addressText}>Locality: {profileData.address.locality || 'N/A'}</Text>
-        <Text style={styles.addressText}>City: {profileData.address.city || 'N/A'}</Text>
-        <Text style={styles.addressText}>State: {profileData.address.state || 'N/A'}</Text>
-        <Text style={styles.addressText}>Country: {profileData.address.country || 'N/A'}</Text>
+        <Text style={styles.addressTitle}>{t('myProfile.address')}</Text>
+        <Text style={styles.addressText}>{t('myProfile.locality')}: {profileData.address.locality || t('myProfile.notAvailable')}</Text>
+        <Text style={styles.addressText}>{t('myProfile.city')}: {profileData.address.city || t('myProfile.notAvailable')}</Text>
+        <Text style={styles.addressText}>{t('myProfile.state')}: {profileData.address.state || t('myProfile.notAvailable')}</Text>
+        <Text style={styles.addressText}>{t('myProfile.country')}: {profileData.address.country || t('myProfile.notAvailable')}</Text>
       </View>
     </ScrollView>
   );

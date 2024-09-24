@@ -13,22 +13,22 @@ import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import { useFocusEffect } from "@react-navigation/native";
 import debounce from "lodash.debounce";
+import { useTranslation } from "react-i18next"; // Import translation hook
 
 const Services = () => {
+  const { t } = useTranslation(); // Initialize translation
   const [services, setServices] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [loading, setLoading] = useState(true);
   const [modalVisible, setModalVisible] = useState(false);
-  const [serviceToDelete, setServiceToDelete] = useState(null); // Track the service to be deleted
+  const [serviceToDelete, setServiceToDelete] = useState(null);
 
   const router = useRouter();
 
-  // Debounced search query handler
   const handleSearchChange = debounce((text) => {
     setSearchQuery(text);
   }, 300);
 
-  // Fetch services from the API
   const fetchServices = async () => {
     try {
       const response = await fetch(
@@ -43,7 +43,6 @@ const Services = () => {
     }
   };
 
-  // Refresh services whenever the screen is focused
   useFocusEffect(
     useCallback(() => {
       fetchServices();
@@ -57,51 +56,46 @@ const Services = () => {
   const goToAddService = () => {
     router.push({
       pathname: "../components/AddService",
-      params: { onAddService: handleAddService }, // Pass the callback as parameter
+      params: { onAddService: handleAddService },
     });
   };
 
   const goToEditService = (service) => {
     router.push({
-      pathname: '../components/editService',
-      params: { service },// Pass the selected service
+      pathname: "../components/editService",
+      params: { service },
     });
   };
 
-  // Show confirmation modal
   const confirmDelete = (service) => {
-    setServiceToDelete(service); // Set the service to be deleted
-    setModalVisible(true); // Show the confirmation modal
+    setServiceToDelete(service);
+    setModalVisible(true);
   };
 
-  // Delete the service
   const deleteService = async () => {
     if (!serviceToDelete) return;
 
     try {
       await fetch(
         `https://fixkar-services-api-1.onrender.com/api/services/deleteService/${serviceToDelete._id}`,
-        {
-          method: "DELETE",
-        }
+        { method: "DELETE" }
       );
 
-      // After deletion, remove the service from the list
       setServices((prevServices) =>
         prevServices.filter((service) => service._id !== serviceToDelete._id)
       );
     } catch (error) {
       console.error("Error deleting service:", error);
     } finally {
-      setModalVisible(false); // Hide the confirmation modal
-      setServiceToDelete(null); // Clear the selected service
+      setModalVisible(false);
+      setServiceToDelete(null);
     }
   };
 
   const goToServiceDetail = (service) => {
     router.push({
       pathname: "../components/EditService",
-      params: { service }, // Pass the selected service
+      params: { service },
     });
   };
 
@@ -109,17 +103,18 @@ const Services = () => {
     return (
       <View style={styles.loadingContainer}>
         <ActivityIndicator size="large" color="#1B5E20" />
+        <Text>{t('myServices.loading.loadingMessage')}</Text>
       </View>
     );
   }
 
   return (
     <View style={styles.container}>
-      <Text style={styles.headerText}>Services</Text>
+      <Text style={styles.headerText}>{t('myServices.services.headerText')}</Text>
       <View style={styles.searchContainer}>
         <TextInput
           style={styles.searchInput}
-          placeholder="Search services..."
+          placeholder={t('myServices.services.searchPlaceholder')}
           placeholderTextColor="#B2DFDB"
           value={searchQuery}
           onChangeText={handleSearchChange}
@@ -132,7 +127,7 @@ const Services = () => {
         style={styles.addServiceButton}
         onPress={goToAddService}
       >
-        <Text style={styles.addServiceText}>Add New Service</Text>
+        <Text style={styles.addServiceText}>{t('myServices.buttons.addService')}</Text>
         <Ionicons name="add-circle-outline" size={24} color="#1B5E20" />
       </TouchableOpacity>
       <FlatList
@@ -166,7 +161,7 @@ const Services = () => {
           </TouchableOpacity>
         )}
         ListEmptyComponent={
-          <Text style={styles.noServiceText}>No services added yet.</Text>
+          <Text style={styles.noServiceText}>{t('myServices.services.noServicesText')}</Text>
         }
       />
 
@@ -180,20 +175,20 @@ const Services = () => {
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
             <Text style={styles.modalText}>
-              Are you sure you want to delete this service?
+              {t('myServices.services.deleteConfirmation')}
             </Text>
             <View style={styles.modalButtons}>
               <TouchableOpacity
                 style={styles.confirmButton}
                 onPress={deleteService}
               >
-                <Text style={styles.confirmText}>Yes</Text>
+                <Text style={styles.confirmText}>{t('myServices.services.confirm')}</Text>
               </TouchableOpacity>
               <TouchableOpacity
                 style={styles.cancelButton}
                 onPress={() => setModalVisible(false)}
               >
-                <Text style={styles.cancelText}>No</Text>
+                <Text style={styles.cancelText}>{t('myServices.services.cancel')}</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -204,6 +199,7 @@ const Services = () => {
 };
 
 export default Services;
+
 
 
 const styles = StyleSheet.create({

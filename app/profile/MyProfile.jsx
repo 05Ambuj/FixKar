@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, ScrollView, Image, Alert } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 import axios from 'axios';
+import { useTranslation } from 'react-i18next'; // Import the useTranslation hook
 import { getItem } from '../../utils/AsyncStorage';
 
 const MyProfile = () => {
+  const { t } = useTranslation(); // Initialize the translation hook
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -29,43 +31,39 @@ const MyProfile = () => {
     }
   };
 
- // Assuming correct path
+  const handleSave = async () => {
+    try {
+      const token = await getItem('userToken');
+      if (!token) {
+        Alert.alert(t('myProfile.errorTitle'), t('myProfile.errorToken'));
+        return;
+      }
 
-const handleSave = async () => {
-  try {
-    const token = await getItem('userToken'); // Fetch the token using your custom utility
+      const profileData = {
+        name,
+        email,
+        phone: phoneNumber,
+        address,
+        profilePhoto: profileAvatar,
+      };
 
-    if (!token) {
-      Alert.alert('Error', 'User token not found.');
-      return;
+      const response = await axios.put('https://fixkar.onrender.com/updateProfile', profileData, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (response.status === 200) {
+        Alert.alert(t('myProfile.successTitle'), t('myProfile.successMessage'));
+      } else {
+        Alert.alert(t('myProfile.errorTitle'), t('myProfile.errorUpdate'));
+      }
+    } catch (error) {
+      console.error('Error updating profile:', error);
+      Alert.alert(t('myProfile.errorTitle'), t('myProfile.errorUpdate'));
     }
-
-    const profileData = {
-      name,
-      email,
-      phone: phoneNumber,
-      address,
-      profilePhoto: profileAvatar, // Modify as per backend requirements
-    };
-
-    const response = await axios.put('https://fixkar.onrender.com/updateProfile', profileData, {
-      headers: {
-        Authorization: `Bearer ${token}`, // Pass token in Authorization header
-        'Content-Type': 'application/json',
-      },
-    });
-
-    if (response.status === 200) {
-      Alert.alert('Success', 'Profile updated successfully.');
-    } else {
-      Alert.alert('Error', 'Failed to update profile.');
-    }
-  } catch (error) {
-    console.error('Error updating profile:', error);
-    Alert.alert('Error', 'An error occurred while updating the profile.');
-  }
-};
-
+  };
 
   return (
     <View style={styles.container}>
@@ -76,28 +74,28 @@ const handleSave = async () => {
               <Image source={{ uri: profileAvatar }} style={styles.avatar} />
             ) : (
               <View style={styles.avatarPlaceholder}>
-                <Text style={styles.avatarText}>Pick Avatar</Text>
+                <Text style={styles.avatarText}>{t('myProfile.pickAvatar')}</Text>
               </View>
             )}
           </TouchableOpacity>
         </View>
         <TextInput
           style={styles.textInput}
-          placeholder="Name"
+          placeholder={t('myProfile.namePlaceholder')}
           placeholderTextColor="#B0B0B0"
           value={name}
           onChangeText={setName}
         />
         <TextInput
           style={styles.textInput}
-          placeholder="Email (optional)"
+          placeholder={t('myProfile.emailPlaceholder')}
           placeholderTextColor="#B0B0B0"
           value={email}
           onChangeText={setEmail}
         />
         <TextInput
           style={styles.textInput}
-          placeholder="Phone Number"
+          placeholder={t('myProfile.phonePlaceholder')}
           placeholderTextColor="#B0B0B0"
           value={phoneNumber}
           keyboardType="phone-pad"
@@ -105,34 +103,34 @@ const handleSave = async () => {
         />
         <TextInput
           style={styles.textInput}
-          placeholder="Locality"
+          placeholder={t('myProfile.localityPlaceholder')}
           placeholderTextColor="#B0B0B0"
           value={address.locality}
           onChangeText={(text) => setAddress({ ...address, locality: text })}
         />
         <TextInput
           style={styles.textInput}
-          placeholder="City"
+          placeholder={t('myProfile.cityPlaceholder')}
           placeholderTextColor="#B0B0B0"
           value={address.city}
           onChangeText={(text) => setAddress({ ...address, city: text })}
         />
         <TextInput
           style={styles.textInput}
-          placeholder="State"
+          placeholder={t('myProfile.statePlaceholder')}
           placeholderTextColor="#B0B0B0"
           value={address.state}
           onChangeText={(text) => setAddress({ ...address, state: text })}
         />
         <TextInput
           style={styles.textInput}
-          placeholder="Country"
+          placeholder={t('myProfile.countryPlaceholder')}
           placeholderTextColor="#B0B0B0"
           value={address.country}
           onChangeText={(text) => setAddress({ ...address, country: text })}
         />
         <TouchableOpacity style={styles.button} onPress={handleSave}>
-          <Text style={styles.buttonText}>Save Profile</Text>
+          <Text style={styles.buttonText}>{t('myProfile.saveProfile')}</Text>
         </TouchableOpacity>
       </ScrollView>
     </View>

@@ -1,0 +1,127 @@
+{
+  "common": {
+    "verify_otp": "ওটিপি পৰীক্ষা কৰক",
+    "resend_otp": "ওটিপি পুনৰ পঠিয়াওক",
+    "in": "তাত",
+    "search": "অনুসন্ধান কৰক...",
+    "assignedTasks": "নিযুক্ত কৰ্ম",
+    "acceptedTasks": "গৃহীত কৰ্ম",
+    "completedTasks": "সম্পন্ন কৰ্ম",
+    "assignedTasksDescription": "এতিয়া আপুনি দেখিবলৈ পোৱা যায় যে আপোনালোকৰ কাৰ্য কি দিয়া হৈছে।",
+    "acceptedTasksDescription": "এতিয়া আপুনি দেখিবলৈ পোৱা যায় যে আপোনালোকৰ কাৰ্য কি গ্ৰহণ কৰা হৈছে।",
+    "completedTasksDescription": "এতিয়া আপুনি দেখিবলৈ পোৱা যায় যে আপোনালোকৰ কাৰ্য কি সম্পন্ন কৰা হৈছে।",
+    "dashboard": "ডেছব'ৰ্ড",
+    "services": "সেৱাসমূহ",
+    "chat": "চেট",
+    "profile": "প্ৰোফাইল",
+    "logout": "লগ আউট"
+  },
+  "tabs": {
+    "tabBar": {
+      "dashboard": "ডেছব'ৰ্ড",
+      "services": "সেৱাসমূহ",
+      "chat": "চেট",
+      "profile": "প্ৰোফাইল"
+    }
+  },
+  "validation": {
+    "nameMin": "নামত ৫টা অক্ষৰ থকাটো আৱশ্যক",
+    "nameMax": "নাম ২৫টা অক্ষৰৰ অধিক নোহোৱা উচিত",
+    "nameRequired": "নাম আৱশ্যক",
+    "phoneNumberFormat": "ফোন নম্বৰ ১০ সংখ্যা থকা উচিত",
+    "phoneNumberRequired": "ফোন নম্বৰ আৱশ্যক"
+  },
+  "dashboard": {
+    "title": "ডেছব'ৰ্ড",
+    "searchPlaceholder": "এতিয়া অনুসন্ধান কৰক...",
+    "rupeeIcon": "টকা",
+    "micIcon": "মাইক"
+  },
+  "otp_verification": {
+    "title": "ওটিপি দিয়ক",
+    "incorrect_otp": "ভুল ওটিপি",
+    "verification_failed": "যাচাই কৰা বিফল। অনুগ্ৰহ কৰি পুনৰ চেষ্টা কৰক।",
+    "enter_6_digit_otp": "অনুগ্ৰহ কৰি ৬ সংখ্যাৰ ওটিপি দিয়ক",
+    "failed_to_resend_otp": "ওটিপি পুনৰ পঠিওৱাত বিফল"
+  },
+  "signUp": {
+    "title": "ছাইন আপ কৰক",
+    "nameLabel": "নাম",
+    "namePlaceholder": "আপোনাৰ নাম লিখক",
+    "nameError": "নামত ৫টা অক্ষৰ থকাটো আৱশ্যক",
+    "phoneLabel": "ফোন নম্বৰ",
+    "phonePlaceholder": "আপোনাৰ ফোন নম্বৰ লিখক",
+    "phoneError": "ফোন নম্বৰ ১০ সংখ্যাৰ হ'ব লাগিব",
+    "submitButton": "জমা কৰক",
+    "alreadyHaveAccount": "আগতে একাউণ্ট আছে? লগ ইন কৰক",
+    "notificationAlreadyRegistered": "এই নম্বৰটো পূৰ্বে নিবন্ধিত।"
+  },
+  "login": {
+    "title": "লগ ইন কৰক",
+    "phoneNumberLabel": "ফোন নম্বৰ",
+    "phoneNumberPlaceholder": "আপোনাৰ ফোন নম্বৰ লিখক",
+    "loginButton": "লগ ইন কৰক",
+    "alreadyHaveAccount": "আপোনাৰ কি একাউণ্ট নাই? সাইন ইন কৰক",
+    "error": "লগ ইন বিফল। অনুগ্ৰহ কৰি পুনৰ চেষ্টা কৰক।",
+    "phoneNumberError": "ফোন নম্বৰ ১০ সংখ্যাৰ হ'ব লাগিব"
+  },
+  "profile": {
+    "title": "প্ৰোফাইল",
+    "workReport": "কামৰ প্ৰতিবেদন",
+    "aboutUs": "আমাৰ বিষয়ে",
+    "contactUs": "আমাক যোগাযোগ কৰক"
+  },
+  "myProfile": {
+    "pickAvatar": "অৱতাৰ চয়ন কৰক",
+    "namePlaceholder": "নাম",
+    "emailPlaceholder": "ইমেইল (ঐচ্ছিক)",
+    "phonePlaceholder": "ফোন নম্বৰ",
+    "localityPlaceholder": "অঞ্চল",
+    "cityPlaceholder": "শহৰ",
+    "statePlaceholder": "ৰাজ্য",
+    "countryPlaceholder": "দেশ",
+    "saveProfile": "প্ৰোফাইল সাঁচি ৰাখক",
+    "errorTitle": "ত্রুটি",
+    "errorToken": "ব্যৱহাৰকাৰীৰ টোকেন পোৱা নগ’ল।",
+    "errorUpdate": "প্ৰোফাইল আপডেটত বিফল।",
+    "successTitle": "সফলতা",
+    "successMessage": "প্ৰোফাইল সফলতাৰে আপডেট হৈছে।"
+  },
+  "aboutUs": {
+    "description": "আমরা এক কোম্পানী যি অত্যাশ্চৰ্যজনক সেৱা আৰু সামগ্ৰী প্ৰদান কৰিবলৈ প্ৰতিশ্ৰুতিবদ্ধ। আমাৰ উদ্দেশ্য হৈছে আমাৰ কামৰ দ্বাৰা পৃথিৱীত ইতিবাচক প্ৰভাৱ পেলোৱা। আমরা গ্ৰাহকৰ আশা অতিক্ৰম কৰিবলৈ আৰু উচ্চতৰ মানৰ মান বজাই ৰাখিবলৈ উদ্ভাৱনৰ চেষ্টা কৰোঁ। আমাৰ বিশেষজ্ঞৰ দলৰ সদস্যসকল নিজৰ কামৰ প্রতি উৎসাহী আৰু আমি সফলতাৰ বাবে সহযোগিতা আৰু সৃজনশীলতাৰ শক্তিত বিশ্বাস কৰোঁ। আমাৰ সৈতে যোগদান কৰক যেতিয়া আমরা আগুৱাই যাই আৰু এক গুৰুত্বপূর্ণ পৰিৱৰ্তন আনিবলৈ চেষ্টা কৰোঁ।"
+  },
+  "contactUs": {
+    "placeholder": "আপোনাৰ বাৰ্তা",
+    "send": "পাঠাও"
+  },
+  "onboarding": {
+    "find_person": "কামৰ বাবে কোনোবাক বিচাৰাত বিফল",
+    "work_new_places": "নতুন ঠাইত কাম কৰাৰ ইচ্ছা",
+    "digital_confidence": "ডিজিটেল প্ৰযুক্তিত আত্মবিশ্বাস নাই"
+  },
+  "myServices": {
+    "services": {
+      "headerText": "সেৱাসমূহ",
+      "searchPlaceholder": "সেৱা অনুসন্ধান কৰক...",
+      "addNewService": "নতুন সেৱা যোগ কৰক",
+      "serviceName": "নাম",
+      "serviceDescription": "বিৱৰণ",
+      "noServicesText": "এতিয়ালৈকে কোনো সেৱা যোগ কৰা হোৱা নাই।",
+      "deleteConfirmation": "আপুনি কি নিশ্চিত যে আপুনি এই সেৱা মচি পেলাব?",
+      "confirm": "হয়",
+      "cancel": "নহয়"
+    },
+    "buttons": {
+      "addService": "নতুন সেৱা যোগ কৰক",
+      "editService": "সম্পাদনা কৰক",
+      "deleteService": "মচি পেলাও",
+      "mic": "মাইক"
+    },
+    "modal": {
+      "deleteConfirmation": "আপুনি কি নিশ্চিত যে আপুনি এই সেৱা মচি পেলাব?"
+    },
+    "loading": {
+      "loadingMessage": "সেৱাসমূহ লোড কৰা হৈছে..."
+    }
+  }
+}

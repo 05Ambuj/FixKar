@@ -1,8 +1,10 @@
 import { StyleSheet, Text, View } from "react-native";
-import 'react-native-url-polyfill/auto';
+import "react-native-url-polyfill/auto";
 import { Slot, SplashScreen, Stack } from "expo-router";
 import { useEffect } from "react";
 import { useFonts } from "expo-font";
+import "intl-pluralrules"; // Add this line at the top
+import "../utils/i18n"; // Ensure this is the correct path to your i18n setup
 
 SplashScreen.preventAutoHideAsync();
 const RootLayout = () => {
@@ -27,7 +29,6 @@ const RootLayout = () => {
 
   return (
     <Stack>
-      
       <Stack.Screen name="index" options={{ headerShown: false }} />
       <Stack.Screen name="(auth)" options={{ headerShown: false }} />
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
@@ -36,7 +37,3 @@ const RootLayout = () => {
 };
 
 export default RootLayout;
-
-
-// https://fixkar-provider-api.onrender.com/
-//  https://fixkar.onrender.com/api/auth/createProfile

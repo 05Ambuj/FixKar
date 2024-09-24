@@ -3,20 +3,22 @@ import { View, TextInput, Text, StyleSheet, TouchableOpacity, Animated, Easing, 
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
-import {Link, useRouter} from 'expo-router';
+import { Link, useRouter } from 'expo-router';
 import { setItem } from '../../utils/AsyncStorage';
+import { useTranslation } from 'react-i18next';
 
 // Validation Schema using Yup
 const validationSchema = Yup.object().shape({
   phoneNumber: Yup.string()
-    .matches(/^[0-9]{10}$/, 'Phone number must be exactly 10 digits')
-    .required('Phone number is required'),
+    .matches(/^[0-9]{10}$/, 'login.phoneNumberError')
+    .required('login.phoneNumberError'),
 });
 
 const { width } = Dimensions.get('window');
 
 const LogIn = ({ navigation }) => {
   const router = useRouter();
+  const { t } = useTranslation();
 
   const [error, setError] = useState('');
   const [fadeAnim] = useState(new Animated.Value(0)); // Initial opacity is 0
@@ -32,8 +34,8 @@ const LogIn = ({ navigation }) => {
   }, [fadeAnim]);
 
   const handleSubmit = async (values) => {
-    values.phoneNumber=`+91${values.phoneNumber}`;
-    console.log('values',values);
+    values.phoneNumber = `+91${values.phoneNumber}`;
+    console.log('values', values);
     const { phoneNumber } = values;
     try {
       // Sending phone number to check if the user exists
@@ -51,7 +53,7 @@ const LogIn = ({ navigation }) => {
       }
     } catch (err) {
       console.log(err);
-      setError('Failed to login. Please try again.');
+      setError(t('login.error'));
     }
   };
 
@@ -69,10 +71,10 @@ const LogIn = ({ navigation }) => {
           {({ handleBlur, handleSubmit, values, errors, touched, setFieldValue }) => (
             <>
               {/* Phone Number Field with Label */}
-              <Text style={styles.label}>Phone Number</Text>
+              <Text style={styles.label}>{t('login.phoneNumberLabel')}</Text>
               <TextInput
                 style={styles.input}
-                placeholder="Enter your phone number"
+                placeholder={t('login.phoneNumberPlaceholder')}
                 keyboardType="numeric"
                 placeholderTextColor="#B0B0B0" // Light gray placeholder color
                 onChangeText={(text) => {
@@ -86,12 +88,12 @@ const LogIn = ({ navigation }) => {
               />
               {/* Show error below the input */}
               {touched.phoneNumber && errors.phoneNumber && (
-                <Text style={styles.errorText}>{errors.phoneNumber}</Text>
+                <Text style={styles.errorText}>{t('login.phoneNumberError')}</Text>
               )}
 
               {/* Submit Button */}
               <TouchableOpacity style={styles.button} onPress={handleSubmit}>
-                <Text style={styles.buttonText}>Login</Text>
+                <Text style={styles.buttonText}>{t('login.loginButton')}</Text>
               </TouchableOpacity>
 
               {/* Show API error */}
@@ -100,7 +102,7 @@ const LogIn = ({ navigation }) => {
               {/* Links for Sign Up */}
               <View style={styles.linkContainer}>
                 <TouchableOpacity>
-                  <Link href={'/SignUp'} style={styles.link}>Don't have an account? Sign Up</Link>
+                  <Link href={'/SignUp'} style={styles.link}>{t('login.alreadyHaveAccount')}</Link>
                 </TouchableOpacity>
               </View>
             </>

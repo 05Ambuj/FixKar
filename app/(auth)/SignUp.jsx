@@ -5,21 +5,12 @@ import * as Yup from 'yup';
 import axios from 'axios';
 import { Link, useRouter } from 'expo-router';
 import { setItem } from '../../utils/AsyncStorage';
-
-// Validation Schema using Yup
-const validationSchema = Yup.object().shape({
-  name: Yup.string()
-    .min(5, 'Name must be at least 5 characters')
-    .max(25, 'Name cannot be longer than 25 characters')
-    .required('Name is required'),
-  phoneNumber: Yup.string()
-    .matches(/^[0-9]{10}$/, 'Phone number must be exactly 10 digits')
-    .required('Phone number is required'),
-});
+import { useTranslation } from 'react-i18next';
 
 const { width } = Dimensions.get('window');
 
 const SignUp = () => {
+  const { t } = useTranslation();
   const router = useRouter();
   const [error, setError] = useState('');
   const [notification, setNotification] = useState('');
@@ -27,10 +18,8 @@ const SignUp = () => {
 
   useEffect(() => {
     if (notification) {
-      // Show the notification
       setFadeInAnimation();
 
-      // Hide notification after 3 seconds
       const timer = setTimeout(() => {
         setFadeOutAnimation();
       }, 3000);
@@ -53,8 +42,18 @@ const SignUp = () => {
       duration: 300,
       easing: Easing.ease,
       useNativeDriver: true,
-    }).start(() => setNotification('')); // Clear notification after fade-out
+    }).start(() => setNotification(''));
   };
+
+  const validationSchema = Yup.object().shape({
+    name: Yup.string()
+      .min(5, t('validation.nameMin')) // Translated warning
+      .max(25, t('validation.nameMax')) // Translated warning
+      .required(t('validation.nameRequired')), // Translated warning
+    phoneNumber: Yup.string()
+      .matches(/^[0-9]{10}$/, t('validation.phoneNumberFormat')) // Translated warning
+      .required(t('validation.phoneNumberRequired')), // Translated warning
+  });
 
   const handleSubmit = async (values) => {
     values.phoneNumber = `+91${values.phoneNumber}`;
@@ -65,7 +64,7 @@ const SignUp = () => {
       });
 
       if (response.data.message === 'This number is already registered with us') {
-        setNotification('This number is already registered.');
+        setNotification(t('signUp.notificationAlreadyRegistered'));
       } else if (response.data.user) {
         const newUser = {
           from: 'signup',
@@ -78,30 +77,29 @@ const SignUp = () => {
     } catch (error) {
       if (error.response) {
         console.error('Server responded with an error:', error.response.data);
-        setError(error.response.data.message || 'Something went wrong while submitting the form');
+        setError(error.response.data.message || t('signUp.errorGeneric'));
       } else if (error.request) {
         console.error('No response received:', error.request);
-        setError('No response from the server. Please try again later.');
+        setError(t('signUp.errorNoResponse'));
       } else {
         console.error('Error setting up request:', error.message);
-        setError('An error occurred while setting up the request');
+        setError(t('signUp.errorSetup'));
       }
     }
   };
 
   return (
     <View style={styles.container}>
-      {/* Notification Component */}
       <Animated.View style={[styles.notification, { opacity: fadeAnim }]}>
         <Text style={styles.notificationText}>{notification}</Text>
       </Animated.View>
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <ScrollView contentContainerStyle={styles.scrollContainer}>
           <View style={styles.formContainer}>
-            <Text style={styles.title}>Sign Up</Text>
+            <Text style={styles.title}>{t('signUp.title')}</Text>
             <Formik
               initialValues={{ name: '', phoneNumber: '' }}
-              validationSchema={validationSchema}
+              validationSchema={validationSchema} // Pass the validation schema
               onSubmit={(values, { resetForm }) => {
                 handleSubmit(values);
                 resetForm();
@@ -109,11 +107,10 @@ const SignUp = () => {
             >
               {({ handleBlur, handleSubmit, values, errors, touched, setFieldValue }) => (
                 <>
-                  {/* Name Field */}
-                  <Text style={styles.label}>Name</Text>
+                  <Text style={styles.label}>{t('signUp.nameLabel')}</Text>
                   <TextInput
                     style={styles.textInput}
-                    placeholder="Enter your name"
+                    placeholder={t('signUp.namePlaceholder')}
                     placeholderTextColor="#B0B0B0"
                     onChangeText={(text) => setFieldValue('name', text)}
                     onBlur={handleBlur('name')}
@@ -123,11 +120,10 @@ const SignUp = () => {
                     <Text style={styles.errorText}>{errors.name}</Text>
                   )}
 
-                  {/* Phone Number Field */}
-                  <Text style={styles.label}>Phone Number</Text>
+                  <Text style={styles.label}>{t('signUp.phoneLabel')}</Text>
                   <TextInput
                     style={styles.textInput}
-                    placeholder="Enter your phone number"
+                    placeholder={t('signUp.phonePlaceholder')}
                     placeholderTextColor="#B0B0B0"
                     keyboardType="numeric"
                     onChangeText={(text) => {
@@ -142,17 +138,14 @@ const SignUp = () => {
                     <Text style={styles.errorText}>{errors.phoneNumber}</Text>
                   )}
 
-                  {/* Submit Button */}
                   <TouchableOpacity style={styles.button} onPress={handleSubmit}>
-                    <Text style={styles.buttonText}>Submit</Text>
+                    <Text style={styles.buttonText}>{t('signUp.submitButton')}</Text>
                   </TouchableOpacity>
 
-                  {/* Show API error */}
                   {error ? <Text style={styles.errorText}>{error}</Text> : null}
 
-                  {/* Link to Login Page */}
                   <View style={styles.linkContainer}>
-                    <Link href="/LogIn" style={styles.link}>Already have an account? Log In</Link>
+                    <Link href="/LogIn" style={styles.link}>{t('signUp.alreadyHaveAccount')}</Link>
                   </View>
                 </>
               )}
@@ -163,6 +156,8 @@ const SignUp = () => {
     </View>
   );
 };
+
+export default SignUp;
 
 const styles = StyleSheet.create({
   container: {
@@ -247,5 +242,3 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 });
-
-export default SignUp;

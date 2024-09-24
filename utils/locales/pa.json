@@ -1,0 +1,127 @@
+{
+  "common": {
+    "verify_otp": "OTP ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ",
+    "resend_otp": "OTP ਨੂੰ ਦੁਬਾਰਾ ਭੇਜੋ",
+    "in": " ਵਿੱਚ",
+    "search": "ਖੋਜੋ...",
+    "assignedTasks": "ਸੌਂਪੀਆਂ ਗਈਆਂ ਕੰਮ",
+    "acceptedTasks": "ਸਵੀਕਾਰ ਕੀਤੀਆਂ ਕੰਮ",
+    "completedTasks": "ਪੂਰੀਆਂ ਕੀਤੀਆਂ ਕੰਮ",
+    "assignedTasksDescription": "ਇੱਥੇ ਤੁਸੀਂ ਤੁਹਾਡੇ ਲਈ ਸੌਂਪੀਆਂ ਗਈਆਂ ਕੰਮਾਂ ਨੂੰ ਦੇਖ ਸਕਦੇ ਹੋ.",
+    "acceptedTasksDescription": "ਇੱਥੇ ਤੁਸੀਂ ਸਵੀਕਾਰ ਕੀਤੀਆਂ ਕੰਮਾਂ ਨੂੰ ਦੇਖ ਸਕਦੇ ਹੋ.",
+    "completedTasksDescription": "ਇੱਥੇ ਤੁਸੀਂ ਪੂਰੀਆਂ ਕੀਤੀਆਂ ਕੰਮਾਂ ਨੂੰ ਦੇਖ ਸਕਦੇ ਹੋ.",
+    "dashboard": "ਡੈਸ਼ਬੋਰਡ",
+    "services": "ਸੇਵਾਵਾਂ",
+    "chat": "ਗੱਲਬਾਤ",
+    "profile": "ਪ੍ਰੋਫਾਈਲ",
+    "logout": "ਲਾਗ ਆਊਟ"
+  },
+  "tabs": {
+    "tabBar": {
+      "dashboard": "ਡੈਸ਼ਬੋਰਡ",
+      "services": "ਸੇਵਾਵਾਂ",
+      "chat": "ਗੱਲਬਾਤ",
+      "profile": "ਪ੍ਰੋਫਾਈਲ"
+    }
+  },
+  "validation": {
+    "nameMin": "ਨਾਮ ਘੱਟੋ-ਘੱਟ 5 ਅੱਖਰਾਂ ਦਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ",
+    "nameMax": "ਨਾਮ 25 ਅੱਖਰਾਂ ਨੂੰ ਪਾਰ ਨਹੀਂ ਕਰ ਸਕਦਾ",
+    "nameRequired": "ਨਾਮ ਜ਼ਰੂਰੀ ਹੈ",
+    "phoneNumberFormat": "ਫੋਨ ਨੰਬਰ 10 ਅੰਕਾਂ ਦਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ",
+    "phoneNumberRequired": "ਫੋਨ ਨੰਬਰ ਜ਼ਰੂਰੀ ਹੈ"
+  },
+  "dashboard": {
+    "title": "ਡੈਸ਼ਬੋਰਡ",
+    "searchPlaceholder": "ਇੱਥੇ ਖੋਜੋ...",
+    "rupeeIcon": "ਰੂਪਏ",
+    "micIcon": "ਮਾਈਕ"
+  },
+  "otp_verification": {
+    "title": "OTP ਦਰਜ ਕਰੋ",
+    "incorrect_otp": "ਗਲਤ OTP",
+    "verification_failed": "ਪੁਸ਼ਟੀ ਅਸਫਲ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ.",
+    "enter_6_digit_otp": "ਕਿਰਪਾ ਕਰਕੇ 6 ਅੰਕਾਂ ਦਾ OTP ਦਰਜ ਕਰੋ",
+    "failed_to_resend_otp": "OTP ਨੂੰ ਦੁਬਾਰਾ ਭੇਜਣ ਵਿੱਚ ਅਸਫਲ"
+  },
+  "signUp": {
+    "title": "ਸਾਈਨ ਅਪ",
+    "nameLabel": "ਨਾਮ",
+    "namePlaceholder": "ਆਪਣਾ ਨਾਮ ਦਰਜ ਕਰੋ",
+    "nameError": "ਨਾਮ ਘੱਟੋ-ਘੱਟ 5 ਅੱਖਰਾਂ ਦਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ",
+    "phoneLabel": "ਫੋਨ ਨੰਬਰ",
+    "phonePlaceholder": "ਆਪਣਾ ਫੋਨ ਨੰਬਰ ਦਰਜ ਕਰੋ",
+    "phoneError": "ਫੋਨ ਨੰਬਰ ਪੂਰੇ 10 ਅੰਕਾਂ ਦਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ",
+    "submitButton": "ਸਮਰਪਿਤ ਕਰੋ",
+    "alreadyHaveAccount": "ਕੀ ਤੁਹਾਡੇ ਕੋਲ ਪਹਿਲਾਂ ਹੀ ਖਾਤਾ ਹੈ? ਲਾਗ ਇਨ ਕਰੋ",
+    "notificationAlreadyRegistered": "ਇਹ ਨੰਬਰ ਪਹਿਲਾਂ ਹੀ ਰਜਿਸਟਰ ਕੀਤਾ ਗਿਆ ਹੈ."
+  },
+  "login": {
+    "title": "ਲਾਗ ਇਨ",
+    "phoneNumberLabel": "ਫੋਨ ਨੰਬਰ",
+    "phoneNumberPlaceholder": "ਆਪਣਾ ਫੋਨ ਨੰਬਰ ਦਰਜ ਕਰੋ",
+    "loginButton": "ਲਾਗ ਇਨ",
+    "alreadyHaveAccount": "ਕੀ ਤੁਹਾਡੇ ਕੋਲ ਖਾਤਾ ਨਹੀਂ ਹੈ? ਸਾਈਨ ਅਪ ਕਰੋ",
+    "error": "ਲਾਗ ਇਨ ਅਸਫਲ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ.",
+    "phoneNumberError": "ਫੋਨ ਨੰਬਰ ਪੂਰੇ 10 ਅੰਕਾਂ ਦਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
+  },
+  "profile": {
+    "title": "ਪ੍ਰੋਫਾਈਲ",
+    "workReport": "ਕੰਮ ਰਿਪੋਰਟ",
+    "aboutUs": "ਸਾਡੇ ਬਾਰੇ",
+    "contactUs": "ਸਾਨੂੰ ਸੰਪਰਕ ਕਰੋ"
+  },
+  "myProfile": {
+    "pickAvatar": "ਅਵਤਾਰ ਚੁਣੋ",
+    "namePlaceholder": "ਨਾਮ",
+    "emailPlaceholder": "ਈਮੇਲ (ਵਿਕਲਪਿਕ)",
+    "phonePlaceholder": "ਫੋਨ ਨੰਬਰ",
+    "localityPlaceholder": "ਥਾਂ",
+    "cityPlaceholder": "ਸ਼ਹਿਰ",
+    "statePlaceholder": "ਰਾਜ",
+    "countryPlaceholder": "ਦੇਸ਼",
+    "saveProfile": "ਪ੍ਰੋਫਾਈਲ ਸੇਵ ਕਰੋ",
+    "errorTitle": "ਗਲਤੀ",
+    "errorToken": "ਉਪਭੋਗਤਾ ਟੋਕਨ ਨਹੀਂ ਮਿਲਿਆ.",
+    "errorUpdate": "ਪ੍ਰੋਫਾਈਲ ਨੂੰ ਅੱਪਡੇਟ ਕਰਨ ਵਿੱਚ ਅਸਫਲ.",
+    "successTitle": "ਸਫਲਤਾ",
+    "successMessage": "ਪ੍ਰੋਫਾਈਲ ਸਫਲਤਾਪੂਰਕ ਅੱਪਡੇਟ ਹੋ ਗਈ."
+  },
+  "aboutUs": {
+    "description": "ਅਸੀਂ ਵਿਸ਼ੇਸ਼ ਸੇਵਾਵਾਂ ਅਤੇ ਉਤਪਾਦਾਂ ਪ੍ਰਦਾਨ ਕਰਨ ਲਈ ਸਮਰਪਿਤ ਕੰਪਨੀ ਹਾਂ। ਸਾਡਾ ਮਿਸ਼ਨ ਦੁਨੀਆਂ 'ਚ ਸੱਕਾਰਾਤਮਕ ਪ੍ਰਭਾਵ ਪਾਉਣਾ ਹੈ। ਅਸੀਂ ਆਪਣੇ ਕੰਮ ਰਾਹੀਂ ਗਾਹਕਾਂ ਦੀ ਉਮੀਦਾਂ ਤੋਂ ਵੱਧ ਜਾਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਦੇ ਹਾਂ ਅਤੇ ਸਭ ਤੋਂ ਉੱਚੇ ਗੁਣਵੱਤਾ ਦੇ ਮਿਆਰ ਨੂੰ ਬਣਾਈ ਰੱਖਦੇ ਹਾਂ। ਸਾਡੇ ਮਾਹਰਾਂ ਦੀ ਟੀਮ ਉਹਨਾਂ ਦੇ ਕੰਮ ਨੂੰ ਲੈ ਕੇ ਉਤਸ਼ਾਹਿਤ ਹੈ ਅਤੇ ਸਾਨੂੰ ਵਿਸ਼ਵਾਸ ਹੈ ਕਿ ਸਹਿਯੋਗ ਅਤੇ ਸਿਰਜਨਸ਼ੀਲਤਾ ਦੀ ਸ਼ਕਤੀ ਵਿੱਖੇ ਸਫਲਤਾ ਲਈ ਹੈ। ਸਾਡੇ ਨਾਲ ਜੁੜੋ ਜਿਵੇਂ ਕਿ ਅਸੀਂ ਵਧ ਰਹੇ ਹਾਂ ਅਤੇ ਇੱਕ ਮਹੱਤਵਪੂਰਨ ਬਦਲਾਅ ਲਿਆ ਰਹੇ ਹਾਂ."
+  },
+  "contactUs": {
+    "placeholder": "ਤੁਹਾਡਾ ਸੁਨੇਹਾ",
+    "send": "ਭੇਜੋ"
+  },
+  "onboarding": {
+    "find_person": "ਜੌਕ ਲਈ ਕਿਸੇ ਨੂੰ ਲੱਭਣ ਵਿੱਚ ਅਸਫਲ",
+    "work_new_places": "ਨਵੀਆਂ ਥਾਂਵਾਂ 'ਤੇ ਕੰਮ ਕਰਨ ਦੀ ਇੱਛਾ",
+    "digital_confidence": "ਡਿਜੀਟਲ ਤਕਨਾਲੋਜੀ 'ਤੇ ਵਿਸ਼ਵਾਸ ਨਹੀਂ"
+  },
+  "myServices": {
+    "services": {
+      "headerText": "ਸੇਵਾਵਾਂ",
+      "searchPlaceholder": "ਸੇਵਾਵਾਂ ਖੋਜੋ...",
+      "addNewService": "ਨਵੀਂ ਸੇਵਾ ਸ਼ਾਮਲ ਕਰੋ",
+      "serviceName": "ਨਾਮ",
+      "serviceDescription": "ਵਿਵਰਣ",
+      "noServicesText": "ਹੁਣ ਤੱਕ ਕੋਈ ਸੇਵਾ ਸ਼ਾਮਲ ਨਹੀਂ ਕੀਤੀ ਗਈ.",
+      "deleteConfirmation": "ਕੀ ਤੁਸੀਂ ਇਸ ਸੇਵਾਵਾਂ ਨੂੰ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?",
+      "confirm": "ਹਾਂ",
+      "cancel": "ਨਹੀਂ"
+    },
+    "buttons": {
+      "addService": "ਨਵੀਂ ਸੇਵਾ ਸ਼ਾਮਲ ਕਰੋ",
+      "editService": "ਸੰਪਾਦਨ ਕਰੋ",
+      "deleteService": "ਹਟਾਓ",
+      "mic": "ਮਾਈਕ"
+    },
+    "modal": {
+      "deleteConfirmation": "ਕੀ ਤੁਸੀਂ ਇਸ ਸੇਵਾਵਾਂ ਨੂੰ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
+    },
+    "loading": {
+      "loadingMessage": "ਸੇਵਾਵਾਂ ਲੋਡ ਹੋ ਰਹੀਆਂ ਹਨ..."
+    }
+  }
+}

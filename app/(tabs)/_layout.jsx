@@ -4,9 +4,10 @@ import { Tabs } from "expo-router";
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { icons } from '../../constants';
 import { StatusBar } from "expo-status-bar";
+import { useTranslation } from 'react-i18next';
 
-const TabIcon = ({ icon, color, name, focused }) => {
-  const iconColor = focused ? "#00A8A6" : "#003B5C"; // Use teal for active and deep blue for inactive
+const TabIcon = ({ icon, focused, name }) => {
+  const iconColor = focused ? "#00A8A6" : "#003B5C"; // Teal for active, deep blue for inactive
   return (
     <View style={styles.tabIconContainer}>
       <Image
@@ -22,18 +23,20 @@ const TabIcon = ({ icon, color, name, focused }) => {
 };
 
 const TabsLayout = () => {
+  const { t } = useTranslation();
+
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
         <Tabs
           screenOptions={{
             tabBarShowLabel: false,
-            tabBarActiveTintColor: "#00A8A6", // Vibrant teal for active tab
-            tabBarInactiveTintColor: "#003B5C", // Deep blue for inactive tab
+            tabBarActiveTintColor: "#00A8A6",
+            tabBarInactiveTintColor: "#003B5C",
             tabBarStyle: {
-              backgroundColor: "#FAF8F7", // Light cream background
+              backgroundColor: "#FAF8F7",
               borderTopWidth: 1,
-              borderTopColor: "#E0E0E0", // Soft gray border
+              borderTopColor: "#E0E0E0",
               height: 84,
             },
             headerShown: false,
@@ -42,12 +45,11 @@ const TabsLayout = () => {
           <Tabs.Screen
             name="dashboard"
             options={{
-              title: "dashboard",
-              tabBarIcon: ({ color, focused }) => (
+              title: t('tabs.tabBar.dashboard'), // Use translation
+              tabBarIcon: ({ focused }) => (
                 <TabIcon
                   icon={icons.dashboard}
-                  color={color}
-                  name="DashBoard"
+                  name={t('common.dashboard')} // Use translation
                   focused={focused}
                 />
               ),
@@ -56,12 +58,11 @@ const TabsLayout = () => {
           <Tabs.Screen
             name="services"
             options={{
-              title: "services",
-              tabBarIcon: ({ color, focused }) => (
+              title: t('tabs.tabBar.services'), // Use translation
+              tabBarIcon: ({ focused }) => (
                 <TabIcon
                   icon={icons.service}
-                  color={color}
-                  name="Services"
+                  name={t('common.services')} // Use translation
                   focused={focused}
                 />
               ),
@@ -70,12 +71,11 @@ const TabsLayout = () => {
           <Tabs.Screen
             name="chat"
             options={{
-              title: "chat",
-              tabBarIcon: ({ color, focused }) => (
+              title: t('tabs.tabBar.chat'), // Use translation
+              tabBarIcon: ({ focused }) => (
                 <TabIcon
                   icon={icons.chat}
-                  color={color}
-                  name="Chat"
+                  name={t('common.chat')} // Use translation
                   focused={focused}
                 />
               ),
@@ -84,12 +84,11 @@ const TabsLayout = () => {
           <Tabs.Screen
             name="profile"
             options={{
-              title: "profile",
-              tabBarIcon: ({ color, focused }) => (
+              title: t('tabs.tabBar.profile'), // Use translation
+              tabBarIcon: ({ focused }) => (
                 <TabIcon
                   icon={icons.profile}
-                  color={color}
-                  name="Profile"
+                  name={t('common.profile')} // Use translation
                   focused={focused}
                 />
               ),
@@ -114,11 +113,11 @@ const styles = StyleSheet.create({
     gap: 1.5,
   },
   tabIcon: {
-    width: 24, // Adjusted to match the Dashboard icon sizes
+    width: 24,
     height: 24,
   },
   tabText: {
-    fontSize: 12, // Adjusted font size for better consistency
+    fontSize: 12,
     fontFamily: 'Poppins-SemiBold',
   },
 });

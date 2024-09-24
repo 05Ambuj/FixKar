@@ -1,0 +1,127 @@
+{
+  "common": {
+    "verify_otp": "OTP ని ధృవీకరించండి",
+    "resend_otp": "OTPని మళ్లీ పంపండి",
+    "in": "లో",
+    "search": "వెతకండి...",
+    "assignedTasks": "నిర్దేశించిన పనులు",
+    "acceptedTasks": "ఆమోదించిన పనులు",
+    "completedTasks": "పూర్తి చేసిన పనులు",
+    "assignedTasksDescription": "ఇక్కడ మీకు అప్పగించబడ్డ పనులను చూడవచ్చు.",
+    "acceptedTasksDescription": "ఇక్కడ మీరు ఆమోదించిన పనులను చూడవచ్చు.",
+    "completedTasksDescription": "ఇక్కడ మీరు పూర్తి చేసిన పనులను చూడవచ్చు.",
+    "dashboard": "డాష్‌బోర్డ్",
+    "services": "సేవలు",
+    "chat": "చాట్",
+    "profile": "ప్రొఫైల్",
+    "logout": "నిష్క్రమించండి"
+  },
+  "tabs": {
+    "tabBar": {
+      "dashboard": "డాష్‌బోర్డ్",
+      "services": "సేవలు",
+      "chat": "చాట్",
+      "profile": "ప్రొఫైల్"
+    }
+  },
+  "validation": {
+    "nameMin": "పేరు కనీసం 5 అక్షరాలు ఉండాలి",
+    "nameMax": "పేరు 25 అక్షరాలను మించకూడదు",
+    "nameRequired": "పేరు అవసరం",
+    "phoneNumberFormat": "ఫోన్ నంబరు 10 అంకెలుగా ఉండాలి",
+    "phoneNumberRequired": "ఫోన్ నంబరు అవసరం"
+  },
+  "dashboard": {
+    "title": "డాష్‌బోర్డ్",
+    "searchPlaceholder": "ఇక్కడ వెతకండి...",
+    "rupeeIcon": "రూపాయ్",
+    "micIcon": "మైక్"
+  },
+  "otp_verification": {
+    "title": "OTP నమోదు చేయండి",
+    "incorrect_otp": "తప్పు OTP",
+    "verification_failed": "ధృవీకరణ విఫలమైంది. దయచేసి మళ్లీ ప్రయత్నించండి.",
+    "enter_6_digit_otp": "6 అంకెల OTPని నమోదు చేయండి",
+    "failed_to_resend_otp": "OTPని మళ్లీ పంపించడంలో విఫలమైంది"
+  },
+  "signUp": {
+    "title": "సైన్ అప్",
+    "nameLabel": "పేరు",
+    "namePlaceholder": "మీ పేరును నమోదు చేయండి",
+    "nameError": "పేరు కనీసం 5 అక్షరాలు ఉండాలి",
+    "phoneLabel": "ఫోన్ నంబర్",
+    "phonePlaceholder": "మీ ఫోన్ నంబరును నమోదు చేయండి",
+    "phoneError": "ఫోన్ నంబరు ఖచ్చితంగా 10 అంకెలుగా ఉండాలి",
+    "submitButton": "సమర్పించండి",
+    "alreadyHaveAccount": "ఇప్పటికే ఖాతా ఉన్నారా? లాగిన్ అవ్వండి",
+    "notificationAlreadyRegistered": "ఈ సంఖ్య ఇప్పటికే నమోదైంది."
+  },
+  "login": {
+    "title": "లాగిన్",
+    "phoneNumberLabel": "ఫోన్ నంబర్",
+    "phoneNumberPlaceholder": "మీ ఫోన్ నంబరును నమోదు చేయండి",
+    "loginButton": "లాగిన్",
+    "alreadyHaveAccount": "ఖాతా లేదు? సైన్ అప్ చేయండి",
+    "error": "లాగిన్ విఫలమైంది. దయచేసి మళ్లీ ప్రయత్నించండి.",
+    "phoneNumberError": "ఫోన్ నంబరు ఖచ్చితంగా 10 అంకెలుగా ఉండాలి"
+  },
+  "profile": {
+    "title": "ప్రొఫైల్",
+    "workReport": "పని నివేదిక",
+    "aboutUs": "మమ్మల్ని గురించి",
+    "contactUs": "మమ్మల్ని సంప్రదించండి"
+  },
+  "myProfile": {
+    "pickAvatar": "అవతార్ ఎంచుకోండి",
+    "namePlaceholder": "పేరు",
+    "emailPlaceholder": "ఇమెయిల్ (ఐచ్చికం)",
+    "phonePlaceholder": "ఫోన్ నంబర్",
+    "localityPlaceholder": "ప్రాంతం",
+    "cityPlaceholder": "నగరం",
+    "statePlaceholder": "రాష్ట్రం",
+    "countryPlaceholder": "దేశం",
+    "saveProfile": "ప్రొఫైల్ సేవ్ చేయండి",
+    "errorTitle": "తప్పు",
+    "errorToken": "యూజర్ టోకెన్ కనుగొనబడలేదు.",
+    "errorUpdate": "ప్రొఫైల్ నవీకరణలో విఫలమైంది.",
+    "successTitle": "విజయం",
+    "successMessage": "ప్రొఫైల్ విజయవంతంగా నవీకరించబడింది."
+  },
+  "aboutUs": {
+    "description": "మేము ప్రత్యేకమైన సేవలు మరియు ఉత్పత్తులను అందించడానికి అంకితమైన సంస్థ. మా లక్ష్యం ప్రపంచంలో సానుకూల ప్రభావం చూపించడం. మేము మా పని ద్వారా కస్టమర్ అంచనాలను మించటానికి మరియు అత్యుత్తమ నాణ్యత ప్రమాణాలను నిర్వహించడానికి ప్రయత్నిస్తున్నాము. మమ్మల్ని ఆకర్షించే నిపుణుల బృందం, మేము కలిసి పనిచేయడం మరియు సృజనాత్మకత యొక్క శక్తిపై నమ్మకం ఉంచుతాము. మా ప్రస్థానంలో మాతో చేరండి, మరియు అన్వేషణలో అర్థవంతమైన మార్పు చేయడంలో మేము కొనసాగిస్తాము."
+  },
+  "contactUs": {
+    "placeholder": "మీ సందేశం",
+    "send": "పంపండి"
+  },
+  "onboarding": {
+    "find_person": "కార్యానికి ఒక వ్యక్తిని కనుగొనలేకపోతున్నాము",
+    "work_new_places": "కొత్త చోట్ల పని చేయాలని ఆకాంక్షిస్తున్నాను",
+    "digital_confidence": "డిజిటల్ టెక్నాలజీలో నమ్మకం లేదు"
+  },
+  "myServices": {
+    "services": {
+      "headerText": "సేవలు",
+      "searchPlaceholder": "సేవలను వెతకండి...",
+      "addNewService": "కొత్త సేవ జోడించండి",
+      "serviceName": "పేరు",
+      "serviceDescription": "వివరణ",
+      "noServicesText": "ఇప్పటి వరకు ఏ సేవలు జోడించబడలేదు.",
+      "deleteConfirmation": "మీరు ఈ సేవను తొలగించాలనుకుంటున్నారా?",
+      "confirm": "అవును",
+      "cancel": "కాదు"
+    },
+    "buttons": {
+      "addService": "కొత్త సేవ జోడించండి",
+      "editService": "సవరించండి",
+      "deleteService": "తొలగించండి",
+      "mic": "మైక్"
+    },
+    "modal": {
+      "deleteConfirmation": "మీరు ఈ సేవను తొలగించాలనుకుంటున్నారా?"
+    },
+    "loading": {
+      "loadingMessage": "సేవలను లోడ్ చేస్తోంది..."
+    }
+  }
+}

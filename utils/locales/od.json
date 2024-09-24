@@ -1,0 +1,127 @@
+{
+  "common": {
+    "verify_otp": "ଓଟିପି ସତ୍ୟାପନ କରନ୍ତୁ",
+    "resend_otp": "ଓଟିପି ପୁନର୍ପଠାନ କରନ୍ତୁ",
+    "in": "ଭିତର",
+    "search": "ଖୋଜନ୍ତୁ...",
+    "assignedTasks": "ନିଯୁକ୍ତ କାମ",
+    "acceptedTasks": "ଗ୍ରହଣ କୃତ କାମ",
+    "completedTasks": "ସମ୍ପୂର୍ଣ୍ଣ କାମ",
+    "assignedTasksDescription": "ଏଠାରେ ଆପଣ ଦେଖିପାରିବେ କି ଆପଣଙ୍କୁ କେଉଁ କାମ ଦିଆଯାଇଛି।",
+    "acceptedTasksDescription": "ଏଠାରେ ଆପଣ ଦେଖିପାରିବେ କି ଆପଣ କେଉଁ କାମ ଗ୍ରହଣ କରିଛନ୍ତି।",
+    "completedTasksDescription": "ଏଠାରେ ଆପଣ ଦେଖିପାରିବେ କି ଆପଣ କେଉଁ କାମ ସମ୍ପୂର୍ଣ୍ଣ କରିଛନ୍ତି।",
+    "dashboard": "ଡ୍ୟାସ୍ବୋର୍ଡ",
+    "services": "ସେବାଗୁଡିକ",
+    "chat": "ଚାଟ",
+    "profile": "ପ୍ରୋଫାଇଲ୍",
+    "logout": "ଲଗଆଉଟ୍"
+  },
+  "tabs": {
+    "tabBar": {
+      "dashboard": "ଡ୍ୟାସ୍ବୋର୍ଡ",
+      "services": "ସେବାଗୁଡିକ",
+      "chat": "ଚାଟ",
+      "profile": "ପ୍ରୋଫାଇଲ୍"
+    }
+  },
+  "validation": {
+    "nameMin": "ନାମରେ ଅତିକମ ୫ଟା ଅକ୍ଷର ଥିବା ଆବଶ୍ୟକ",
+    "nameMax": "ନାମ ୨୫ଟା ଅକ୍ଷର ଅଧିକ ନହୋଇପାରିବ",
+    "nameRequired": "ନାମ ଆବଶ୍ୟକ",
+    "phoneNumberFormat": "ଫୋନ୍ ନମ୍ବର ୧୦ଟି ସଂଖ୍ୟାର ହେବା ଦରକାର",
+    "phoneNumberRequired": "ଫୋନ୍ ନମ୍ବର ଆବଶ୍ୟକ"
+  },
+  "dashboard": {
+    "title": "ଡ୍ୟାସ୍ବୋର୍ଡ",
+    "searchPlaceholder": "ଏଠାରେ ଖୋଜନ୍ତୁ...",
+    "rupeeIcon": "ଟଙ୍କା",
+    "micIcon": "ମାଇକ୍"
+  },
+  "otp_verification": {
+    "title": "ଓଟିପି ଦିଅନ୍ତୁ",
+    "incorrect_otp": "ଭୁଲ ଓଟିପି",
+    "verification_failed": "ସତ୍ୟାପନ ବିଫଳ। ଦୟାକରି ପୁନର୍ଚେଷ୍ଟା କରନ୍ତୁ।",
+    "enter_6_digit_otp": "ଦୟାକରି ୬ ଅକ୍ଷର ଓଟିପି ଦିଅନ୍ତୁ",
+    "failed_to_resend_otp": "ଓଟିପି ପୁନର୍ପଠାନ କରିବାରେ ବିଫଳ"
+  },
+  "signUp": {
+    "title": "ସାଇନ୍ ଅପ୍ କରନ୍ତୁ",
+    "nameLabel": "ନାମ",
+    "namePlaceholder": "ଆପଣଙ୍କର ନାମ ଲେଖନ୍ତୁ",
+    "nameError": "ନାମରେ ଅତିକମ ୫ଟା ଅକ୍ଷର ଥିବା ଆବଶ୍ୟକ",
+    "phoneLabel": "ଫୋନ୍ ନମ୍ବର",
+    "phonePlaceholder": "ଆପଣଙ୍କର ଫୋନ୍ ନମ୍ବର ଲେଖନ୍ତୁ",
+    "phoneError": "ଫୋନ୍ ନମ୍ବର ୧୦ଟି ସଂଖ୍ୟାର ହେବା ଦରକାର",
+    "submitButton": "ଜମା କରନ୍ତୁ",
+    "alreadyHaveAccount": "ଆଗରୁ ଆପଣଙ୍କର ଏକ ଅକାଉଣ୍ଟ ଅଛି? ଲଗ୍ ଇନ୍ କରନ୍ତୁ",
+    "notificationAlreadyRegistered": "ଏହି ନମ୍ବର ପূର୍ବରୁ ନିବନ୍ଧିତ।"
+  },
+  "login": {
+    "title": "ଲଗ୍ ଇନ୍ କରନ୍ତୁ",
+    "phoneNumberLabel": "ଫୋନ୍ ନମ୍ବର",
+    "phoneNumberPlaceholder": "ଆପଣଙ୍କର ଫୋନ୍ ନମ୍ବର ଲେଖନ୍ତୁ",
+    "loginButton": "ଲଗ୍ ଇନ୍ କରନ୍ତୁ",
+    "alreadyHaveAccount": "ଆପଣଙ୍କର କୌଣସି ଅକାଉଣ୍ଟ ନାହିଁ? ସାଇନ୍ ଇନ୍ କରନ୍ତୁ",
+    "error": "ଲଗ୍ ଇନ୍ ବିଫଳ। ଦୟାକରି ପୁନର୍ଚେଷ୍ଟା କରନ୍ତୁ।",
+    "phoneNumberError": "ଫୋନ୍ ନମ୍ବର ୧୦ଟି ସଂଖ୍ୟାର ହେବା ଦରକାର"
+  },
+  "profile": {
+    "title": "ପ୍ରୋଫାଇଲ୍",
+    "workReport": "କାମର ରିପୋର୍ଟ",
+    "aboutUs": "ଆମ ବିଷୟରେ",
+    "contactUs": "ଆମ ସହିତ ସମ୍ପର୍କ କରନ୍ତୁ"
+  },
+  "myProfile": {
+    "pickAvatar": "ଅବତାର ବାଛନ୍ତୁ",
+    "namePlaceholder": "ନାମ",
+    "emailPlaceholder": "ଇମେଲ୍ (ଇଛା ଅନୁସାରେ)",
+    "phonePlaceholder": "ଫୋନ୍ ନମ୍ବର",
+    "localityPlaceholder": "ସ୍ଥାନୀୟତା",
+    "cityPlaceholder": "ଶହର",
+    "statePlaceholder": "ରାଜ୍ୟ",
+    "countryPlaceholder": "ଦେଶ",
+    "saveProfile": "ପ୍ରୋଫାଇଲ୍ ସଞ୍ଚୟ କରନ୍ତୁ",
+    "errorTitle": "ଭୁଲ",
+    "errorToken": "ବ୍ୟବହାରକାରୀ ଟୋକେନ୍ ମିଳିଲା ନାହିଁ।",
+    "errorUpdate": "ପ୍ରୋଫାଇଲ୍ ଅପଡେଟ୍ କରିବାରେ ବିଫଳ।",
+    "successTitle": "ସଫଳତା",
+    "successMessage": "ପ୍ରୋଫାଇଲ୍ ସଫଳତାରେ ଅପଡେଟ୍ ହୋଇଛି।"
+  },
+  "aboutUs": {
+    "description": "ଆମେ ଏକ କମ୍ପାନୀ ଯାହା ଅସଧାରଣ ସେବା ଓ ଉତ୍ପାଦ ଦେବାକୁ ସମର୍ପିତ। ଆମର ଲକ୍ଷ୍ୟ ହେଉଛି ଆମର କାମ ଦ୍ବାରା ସଂସାରରେ ଇତିବାଚକ ପ୍ରଭାବ ପେଲା। ଆମେ ଗ୍ରାହକଙ୍କର ଆଶାକୁ ଅତିକ୍ରମ କରିବା ଓ ଶ୍ରେଷ୍ଠ ଗୁଣ ମାନକ ରକ୍ଷା କରିବାରେ ଅବିରତ ଚେଷ୍ଟା କରୁ। ଆମର ବିଶେଷଜ୍ଞ ଦଳ କାମ ପ୍ରତି ଉତ୍ସାହୀ ଓ ସଫଳତାର ପାଇଁ ସହଯୋଗ ଓ ସୃଜନାତ୍ମକତାର ଶକ୍ତିକୁ ବିଶ୍ୱାସ କରେ। ଆମ ସହିତ ଯୋଗ ଦିଅନ୍ତୁ ଯେତେବେଳେ ଆମେ ଆଗୁଆଇଯାଉଛୁ ଓ ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ପରିବର୍ତ୍ତନ ଆଣିବାକୁ ଚେଷ୍ଟା କରୁ।"
+  },
+  "contactUs": {
+    "placeholder": "ଆପଣଙ୍କର ବାର୍ତ୍ତା",
+    "send": "ପଠାନ୍ତୁ"
+  },
+  "onboarding": {
+    "find_person": "କାମ ପାଇଁ କେହି ଖୋଜିବାରେ ବିଫଳ",
+    "work_new_places": "ନୂତନ ସ୍ଥାନରେ କାମ କରିବାର ଇଚ୍ଛା",
+    "digital_confidence": "ଡିଜିଟାଲ୍ ପ୍ରଯୁକ୍ତିରେ ଆତ୍ମବିଶ୍ୱାସ ନାହିଁ"
+  },
+  "myServices": {
+    "services": {
+      "headerText": "ସେବାଗୁଡିକ",
+      "searchPlaceholder": "ସେବା ଖୋଜନ୍ତୁ...",
+      "addNewService": "ନୂତନ ସେବା ଯୋଗ କରନ୍ତୁ",
+      "serviceName": "ନାମ",
+      "serviceDescription": "ବିବରଣୀ",
+      "noServicesText": "ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ସେବା ଯୋଗ ହୋଇନଥିଲା।",
+      "deleteConfirmation": "ଆପଣ କି ସୁନିଶ୍ଚିତ ଯେ ଆପଣ ଏହି ସେବାକୁ ମୋଚନ କରିବେ?",
+      "confirm": "ହଁ",
+      "cancel": "ନାହିଁ"
+    },
+    "buttons": {
+      "addService": "ନୂତନ ସେବା ଯୋଗ କରନ୍ତୁ",
+      "editService": "ସଂସ୍କରଣ କରନ୍ତୁ",
+      "deleteService": "ମୋଚନ କରନ୍ତୁ",
+      "mic": "ମାଇକ୍"
+    },
+    "modal": {
+      "deleteConfirmation": "ଆପଣ କି ସୁନିଶ୍ଚିତ ଯେ ଆପଣ ଏହି ସେବାକୁ ମୋଚନ କରିବେ?"
+    },
+    "loading": {
+      "loadingMessage": "ସେବାଗୁଡିକ ଲୋଡ୍ ହେଉଛି..."
+    }
+  }
+}

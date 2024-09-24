@@ -1,0 +1,127 @@
+{
+  "common": {
+    "verify_otp": "ओटीपी सत्यापित करें",
+    "resend_otp": "ओटीपी पुनः भेजें",
+    "in": "में",
+    "search": "खोजें...",
+    "assignedTasks": "सौंपे गए कार्य",
+    "acceptedTasks": "स्वीकृत कार्य",
+    "completedTasks": "पूर्ण कार्य",
+    "assignedTasksDescription": "यहाँ आप देख सकते हैं कि आपके लिए कौन से कार्य सौंपे गए हैं।",
+    "acceptedTasksDescription": "यहाँ आप देख सकते हैं कि आपने कौन से कार्य स्वीकार किए हैं।",
+    "completedTasksDescription": "यहाँ आप देख सकते हैं कि आपने कौन से कार्य पूर्ण किए हैं।",
+    "dashboard": "डैशबोर्ड",
+    "services": "सेवाएँ",
+    "chat": "चैट",
+    "profile": "प्रोफ़ाइल",
+    "logout": "लॉग आउट"
+  },
+  "tabs": {
+    "tabBar": {
+      "dashboard": "डैशबोर्ड",
+      "services": "सेवाएँ",
+      "chat": "चैट",
+      "profile": "प्रोफ़ाइल"
+    }
+  },
+  "validation": {
+    "nameMin": "नाम कम से कम 5 वर्णों का होना चाहिए",
+    "nameMax": "नाम 25 वर्णों से अधिक नहीं होना चाहिए",
+    "nameRequired": "नाम आवश्यक है",
+    "phoneNumberFormat": "फोन नंबर 10 अंकों का होना चाहिए",
+    "phoneNumberRequired": "फोन नंबर आवश्यक है"
+  },
+  "dashboard": {
+    "title": "डैशबोर्ड",
+    "searchPlaceholder": "यहाँ खोजें...",
+    "rupeeIcon": "रुपया",
+    "micIcon": "माइक्रोफोन"
+  },
+  "otp_verification": {
+    "title": "ओटीपी दर्ज करें",
+    "incorrect_otp": "गलत ओटीपी",
+    "verification_failed": "सत्यापन विफल। कृपया फिर से प्रयास करें।",
+    "enter_6_digit_otp": "कृपया 6 अंकों का ओटीपी दर्ज करें",
+    "failed_to_resend_otp": "ओटीपी पुनः भेजने में विफल"
+  },
+  "signUp": {
+    "title": "साइन अप करें",
+    "nameLabel": "नाम",
+    "namePlaceholder": "अपना नाम दर्ज करें",
+    "nameError": "नाम कम से कम 5 वर्णों का होना चाहिए",
+    "phoneLabel": "फोन नंबर",
+    "phonePlaceholder": "अपना फोन नंबर दर्ज करें",
+    "phoneError": "फोन नंबर ठीक 10 अंकों का होना चाहिए",
+    "submitButton": "सबमिट करें",
+    "alreadyHaveAccount": "क्या आपके पास पहले से एक खाता है? लॉग इन करें",
+    "notificationAlreadyRegistered": "यह नंबर पहले से पंजीकृत है।"
+  },
+  "login": {
+    "title": "लॉग इन करें",
+    "phoneNumberLabel": "फोन नंबर",
+    "phoneNumberPlaceholder": "अपना फोन नंबर दर्ज करें",
+    "loginButton": "लॉग इन करें",
+    "alreadyHaveAccount": "क्या आपके पास एक खाता नहीं है? साइन इन करें",
+    "error": "लॉगिन विफल। कृपया फिर से प्रयास करें।",
+    "phoneNumberError": "फोन नंबर ठीक 10 अंकों का होना चाहिए"
+  },
+  "profile": {
+    "title": "प्रोफ़ाइल",
+    "workReport": "कार्य रिपोर्ट",
+    "aboutUs": "हमारे बारे में",
+    "contactUs": "हमसे संपर्क करें"
+  },
+  "myProfile": {
+    "pickAvatar": "अवतार चुनें",
+    "namePlaceholder": "नाम",
+    "emailPlaceholder": "ईमेल (वैकल्पिक)",
+    "phonePlaceholder": "फोन नंबर",
+    "localityPlaceholder": "स्थानीयता",
+    "cityPlaceholder": "शहर",
+    "statePlaceholder": "राज्य",
+    "countryPlaceholder": "देश",
+    "saveProfile": "प्रोफ़ाइल सहेजें",
+    "errorTitle": "त्रुटि",
+    "errorToken": "उपयोगकर्ता टोकन नहीं मिला।",
+    "errorUpdate": "प्रोफ़ाइल अपडेट करने में विफल।",
+    "successTitle": "सफलता",
+    "successMessage": "प्रोफ़ाइल सफलतापूर्वक अपडेट की गई।"
+  },
+  "aboutUs": {
+    "description": "हम एक कंपनी हैं जो असाधारण सेवाएँ और उत्पाद प्रदान करने के लिए समर्पित है। हमारा मिशन अपने काम के माध्यम से दुनिया में सकारात्मक प्रभाव डालना है। हम नवोन्मेषी समाधानों को प्रदान करके और गुणवत्ता के उच्चतम मानकों को बनाए रखकर ग्राहक की अपेक्षाओं को पार करने का प्रयास करते हैं। हमारे विशेषज्ञों की टीम अपने काम के प्रति उत्साही है, और हम सफलता को आगे बढ़ाने के लिए सहयोग और रचनात्मकता की शक्ति में विश्वास करते हैं। हमारे साथ जुड़ें जब हम आगे बढ़ते हैं और एक महत्वपूर्ण अंतर बनाने का प्रयास करते हैं।"
+  },
+  "contactUs": {
+    "placeholder": "आपका संदेश",
+    "send": "भेजें"
+  },
+  "onboarding": {
+    "find_person": "काम के लिए किसी को खोजने में असमर्थ",
+    "work_new_places": "नई जगहों पर काम करने की इच्छा",
+    "digital_confidence": "डिजिटल तकनीक में कोई आत्मविश्वास नहीं"
+  },
+  "myServices": {
+    "services": {
+      "headerText": "सेवाएँ",
+      "searchPlaceholder": "सेवाएँ खोजें...",
+      "addNewService": "नई सेवा जोड़ें",
+      "serviceName": "नाम",
+      "serviceDescription": "विवरण",
+      "noServicesText": "अभी तक कोई सेवा नहीं जोड़ी गई है।",
+      "deleteConfirmation": "क्या आप इस सेवा को हटाना चाहते हैं?",
+      "confirm": "हाँ",
+      "cancel": "नहीं"
+    },
+    "buttons": {
+      "addService": "नई सेवा जोड़ें",
+      "editService": "संपादित करें",
+      "deleteService": "हटाएँ",
+      "mic": "माइक्रोफोन"
+    },
+    "modal": {
+      "deleteConfirmation": "क्या आप सुनिश्चित हैं कि आप इस सेवा को हटाना चाहते हैं?"
+    },
+    "loading": {
+      "loadingMessage": "सेवाएँ लोड हो रही हैं..."
+    }
+  }
+}

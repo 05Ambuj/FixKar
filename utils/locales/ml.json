@@ -1,0 +1,127 @@
+{
+  "common": {
+    "verify_otp": "OTP സ്ഥിരീകരിക്കുക",
+    "resend_otp": "OTP വീണ്ടും അയക്കുക",
+    "in": "ഇവിടെ",
+    "search": "തിരയുക...",
+    "assignedTasks": "അസൈനുചെയ്ത ഉദ്യോഗങ്ങൾ",
+    "acceptedTasks": "സ്വീകരിച്ച ഉദ്യോഗങ്ങൾ",
+    "completedTasks": "പൂർണ്ണമായ ഉദ്യോഗങ്ങൾ",
+    "assignedTasksDescription": "നിങ്ങൾക്ക് അസൈനുചെയ്തിരിക്കുന്ന ഉദ്യോഗങ്ങൾ ഇവിടെ കാണാം.",
+    "acceptedTasksDescription": "നിങ്ങൾ സ്വീകരിച്ച ഉദ്യോഗങ്ങൾ ഇവിടെ കാണാം.",
+    "completedTasksDescription": "നിങ്ങൾ പൂർത്തിയാക്കിയ ഉദ്യോഗങ്ങൾ ഇവിടെ കാണാം.",
+    "dashboard": "ഡാഷ്‌ബോർഡ്",
+    "services": "സേവനങ്ങൾ",
+    "chat": "ചാറ്റ്",
+    "profile": "പ്രൊഫൈൽ",
+    "logout": "ലോഗ് ഔട്ട്"
+  },
+  "tabs": {
+    "tabBar": {
+      "dashboard": "ഡാഷ്‌ബോർഡ്",
+      "services": "സേവനങ്ങൾ",
+      "chat": "ചാറ്റ്",
+      "profile": "പ്രൊഫൈൽ"
+    }
+  },
+  "validation": {
+    "nameMin": "പേര് കുറഞ്ഞത് 5 അക്ഷരങ്ങൾ ഉണ്ടായിരിക്കണം",
+    "nameMax": "പേര് 25 അക്ഷരങ്ങളെ മറികടക്കാൻ കഴിയില്ല",
+    "nameRequired": "പേര് ആവശ്യമുണ്ട്",
+    "phoneNumberFormat": "ഫോൺ നമ്പർ 10 അക്കങ്ങളായിരിക്കണം",
+    "phoneNumberRequired": "ഫോൺ നമ്പർ ആവശ്യമാണ്"
+  },
+  "dashboard": {
+    "title": "ഡാഷ്‌ബോർഡ്",
+    "searchPlaceholder": "ഇവിടെ തിരയുക...",
+    "rupeeIcon": "രൂപയം",
+    "micIcon": "മൈക്ക്"
+  },
+  "otp_verification": {
+    "title": "OTP നൽകുക",
+    "incorrect_otp": "തെറ്റായ OTP",
+    "verification_failed": "സ്ഥിരീകരണം പരാജയപ്പെട്ടു. ദയവായി വീണ്ടും ശ്രമിക്കുക.",
+    "enter_6_digit_otp": "ദയവായി 6 അക്കമുള്ള OTP നൽകുക",
+    "failed_to_resend_otp": "OTP വീണ്ടും അയയ്ക്കാൻ പരാജയപ്പെട്ടു"
+  },
+  "signUp": {
+    "title": "സൈൻ അപ്പ്",
+    "nameLabel": "പേര്",
+    "namePlaceholder": "നിങ്ങളുടെ പേര് നൽകുക",
+    "nameError": "പേര് കുറഞ്ഞത് 5 അക്ഷരങ്ങൾ ഉണ്ടായിരിക്കണം",
+    "phoneLabel": "ഫോൺ നമ്പർ",
+    "phonePlaceholder": "നിങ്ങളുടെ ഫോൺ നമ്പർ നൽകുക",
+    "phoneError": "ഫോൺ നമ്പർ 10 അക്കങ്ങളായിരിക്കണം",
+    "submitButton": "സമർപ്പിക്കുക",
+    "alreadyHaveAccount": "ഇഷ്ട്ടം നിങ്ങളുടെ അക്കൗണ്ട് ഉണ്ടോ? ലോഗിന് ചെയ്യുക",
+    "notificationAlreadyRegistered": "ഈ നമ്പർ ഇതിനകം രജിസ്റ്റർ ചെയ്തിരിക്കുന്നു."
+  },
+  "login": {
+    "title": "ലോഗിന്",
+    "phoneNumberLabel": "ഫോൺ നമ്പർ",
+    "phoneNumberPlaceholder": "നിങ്ങളുടെ ഫോൺ നമ്പർ നൽകുക",
+    "loginButton": "ലോഗിന്",
+    "alreadyHaveAccount": "നിങ്ങൾക്ക് അക്കൗണ്ട് ഇല്ലേ? സൈൻ അപ്പ് ചെയ്യുക",
+    "error": "ലോഗിന് പരാജയപ്പെട്ടു. ദയവായി വീണ്ടും ശ്രമിക്കുക.",
+    "phoneNumberError": "ഫോൺ നമ്പർ 10 അക്കങ്ങളായിരിക്കണം"
+  },
+  "profile": {
+    "title": "പ്രൊഫൈൽ",
+    "workReport": "പ്രവൃത്തിയുടെ റിപ്പോർട്ട്",
+    "aboutUs": "ഞങ്ങളെ കുറിച്ച്",
+    "contactUs": "ഞങ്ങളെ ബന്ധപ്പെടുക"
+  },
+  "myProfile": {
+    "pickAvatar": "അവതാരം തിരഞ്ഞെടുക്കുക",
+    "namePlaceholder": "പേര്",
+    "emailPlaceholder": "ഇമെയിൽ (ഐച്ഛിക)",
+    "phonePlaceholder": "ഫോൺ നമ്പർ",
+    "localityPlaceholder": "സ്ഥാനം",
+    "cityPlaceholder": "നഗരം",
+    "statePlaceholder": "സംസ്ഥാനം",
+    "countryPlaceholder": "ദേശ്യം",
+    "saveProfile": "പ്രൊഫൈൽ സേവ് ചെയ്യുക",
+    "errorTitle": "പിശക്",
+    "errorToken": "ഉപയോക്തൃ ടോക്കൺ ലഭ്യമല്ല.",
+    "errorUpdate": "പ്രൊഫൈൽ അപ്ഡേറ്റ് ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു.",
+    "successTitle": "വിജയം",
+    "successMessage": "പ്രൊഫൈൽ വിജയകരമായി അപ്ഡേറ്റ് ചെയ്തു."
+  },
+  "aboutUs": {
+    "description": "നാം പ്രത്യേക സേവനങ്ങൾക്കും ഉൽപ്പന്നങ്ങൾക്കും സമർപ്പിതമായ ഒരു കമ്പനിയാണു. നമ്മുടെ ലക്ഷ്യം ലോകത്തിൽ പോസിറ്റീവ് സ്വാധീനം സൃഷ്ടിക്കുക എന്നതാണ്. നമ്മുടെ പ്രവർത്തനത്തിലൂടെ ഉപയോക്തൃ പ്രതീക്ഷകൾ മറികടക്കുകയും ഉയർന്ന നിലവാരത്തിന്റെ മാനദണ്ഡങ്ങൾ നിലനിര്‍ത്താൻ ശ്രമിക്കുകയും ചെയ്യുന്നു. നാം ചെയ്യുന്ന കാര്യങ്ങളിൽ ഏറ്റവും മികച്ചതായ പ്രാവിന്യം വഹിക്കുന്ന ടീമും, സഹകരണവും സൃഷ്ടിപരമായതും വിജയത്തിന് നാം വിശ്വസിക്കുന്നു. വളരുന്ന ഘട്ടത്തിലേക്ക് നമുക്ക് കൂടി വരുവാൻ കാത്തിരിക്കുക."
+  },
+  "contactUs": {
+    "placeholder": "നിങ്ങളുടെ സന്ദേശം",
+    "send": "അയയ്ക്കുക"
+  },
+  "onboarding": {
+    "find_person": "ജോലിക്ക് ആരേയും കണ്ടെത്താൻ പരാജയപ്പെട്ടു",
+    "work_new_places": "പുതിയ സ്ഥലങ്ങളിൽ ജോലി ചെയ്യാൻ ആഗ്രഹിക്കുന്നു",
+    "digital_confidence": "ഡിജിറ്റൽ സാങ്കേതികവിദ്യയിൽ ആത്മവിശ്വാസമില്ല"
+  },
+  "myServices": {
+    "services": {
+      "headerText": "സേവനങ്ങൾ",
+      "searchPlaceholder": "സേവനങ്ങൾ തിരയുക...",
+      "addNewService": "പുതിയ സേവനം ചേർക്കുക",
+      "serviceName": "പേര്",
+      "serviceDescription": "വിവരണം",
+      "noServicesText": "ഇതിനകം ഏത് സേവനവും ചേർക്കപ്പെടാത്തതാണ്.",
+      "deleteConfirmation": "ഈ സേവനം നീക്കം ചെയ്യാൻ നിങ്ങൾക്കുണ്ടോ?",
+      "confirm": "അതെ",
+      "cancel": "ഇല്ല"
+    },
+    "buttons": {
+      "addService": "പുതിയ സേവനം ചേർക്കുക",
+      "editService": "സമ്പാദിക്കുക",
+      "deleteService": "നീക്കം ചെയ്യുക",
+      "mic": "മൈക്ക്"
+    },
+    "modal": {
+      "deleteConfirmation": "ഈ സേവനം നീക്കം ചെയ്യാൻ നിങ്ങൾക്കുണ്ടോ?"
+    },
+    "loading": {
+      "loadingMessage": "സേവനങ്ങൾ ലോഡുചെയ്യുന്നു..."
+    }
+  }
+}

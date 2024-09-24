@@ -3,9 +3,11 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet, Animated, Easing, 
 import axios from 'axios';
 import { getItem, removeItem, setItem } from '../../utils/AsyncStorage';
 import { useRouter } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 
 const OtpVerification = () => {
     const router = useRouter();
+    const { t } = useTranslation(); // Initialize translation
     const [otp, setOtp] = useState(['', '', '', '', '', '']);
     const [error, setError] = useState('');
     const [timer, setTimer] = useState(60);
@@ -89,8 +91,8 @@ const OtpVerification = () => {
                     console.log('User verified. Navigating to Dashboard.');
 
                     await setItem('token', response.data.token);
-                    const token =await getItem('token', response.data.token);
-                    console.log("token",token);
+                    const token = await getItem('token', response.data.token);
+                    console.log("token", token);
                     
                     await removeItem('user');
                     
@@ -100,14 +102,14 @@ const OtpVerification = () => {
                         router.replace('../components/LandingService');
                     }
                 } else {
-                    setError('Incorrect OTP');
+                    setError(t('otp_verification.incorrect_otp'));
                 }
             } catch (error) {
-                setError('Verification failed. Please try again.');
+                setError(t('otp_verification.verification_failed'));
                 console.error('Verification error:', error);
             }
         } else {
-            setError('Please enter a 6-digit OTP');
+            setError(t('otp_verification.enter_6_digit_otp'));
         }
     };
 
@@ -118,7 +120,7 @@ const OtpVerification = () => {
             setResendEnabled(false);
             setError('');
         } catch (error) {
-            setError('Failed to resend OTP');
+            setError(t('otp_verification.failed_to_resend_otp'));
         }
     };
 
@@ -126,7 +128,7 @@ const OtpVerification = () => {
         <View style={styles.container}>
             <ScrollView contentContainerStyle={styles.scrollContainer}>
                 <Animated.View style={[styles.formContainer, { opacity: fadeAnim }]}>
-                    <Text style={styles.title}>Enter OTP</Text>
+                    <Text style={styles.title}>{t('otp_verification.title')}</Text>
 
                     <View style={styles.otpContainer}>
                         {otp.map((digit, index) => (
@@ -146,7 +148,7 @@ const OtpVerification = () => {
                     {error ? <Text style={styles.errorText}>{error}</Text> : null}
 
                     <TouchableOpacity style={styles.button} onPress={verifyOtp}>
-                        <Text style={styles.buttonText}>Verify OTP</Text>
+                        <Text style={styles.buttonText}>{t('common.verify_otp')}</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity
@@ -154,7 +156,7 @@ const OtpVerification = () => {
                         disabled={!resendEnabled}
                     >
                         <Text style={resendEnabled ? styles.resendEnabled : styles.resendDisabled}>
-                            {`Resend OTP ${timer > 0 ? `in ${timer}s` : ''}`}
+                            {`${t('common.resend_otp')} ${timer > 0 ? `${t('common.in')} ${timer}s` : ''}`}
                         </Text>
                     </TouchableOpacity>
                 </Animated.View>
@@ -164,28 +166,28 @@ const OtpVerification = () => {
 };
 
 const styles = StyleSheet.create({
-      container: {
-    flex: 1,
-    backgroundColor: '#FAF8F7',
-    justifyContent: 'center', // Center the content vertically
-    alignItems: 'center', // Center the content horizontally
-  },
-  scrollContainer: {
-    flexGrow: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  formContainer: {
-    width: '90%',
-    backgroundColor: '#FFFFFF',
-    padding: 20,
-    borderRadius: 12,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.3,
-    shadowRadius: 6,
-    elevation: 6,
-    alignItems: 'center',
+    container: {
+        flex: 1,
+        backgroundColor: '#FAF8F7',
+        justifyContent: 'center', // Center the content vertically
+        alignItems: 'center', // Center the content horizontally
+    },
+    scrollContainer: {
+        flexGrow: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    formContainer: {
+        width: '90%',
+        backgroundColor: '#FFFFFF',
+        padding: 20,
+        borderRadius: 12,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.3,
+        shadowRadius: 6,
+        elevation: 6,
+        alignItems: 'center',
     },
     title: {
         fontSize: 24,
@@ -221,7 +223,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#00A8A6',
         paddingVertical: 15,
         borderRadius: 12,
-        paddingHorizontal:50,
+        paddingHorizontal: 50,
         alignItems: 'center',
         marginVertical: 10,
     },

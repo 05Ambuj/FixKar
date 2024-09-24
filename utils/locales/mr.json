@@ -1,0 +1,127 @@
+{
+  "common": {
+    "verify_otp": "ओटीपी सत्यापित करा",
+    "resend_otp": "ओटीपी पुन्हा पाठवा",
+    "in": "मध्ये",
+    "search": "शोधा...",
+    "assignedTasks": "सोपलेल्या कार्य",
+    "acceptedTasks": "स्वीकृत कार्य",
+    "completedTasks": "पूर्ण कार्य",
+    "assignedTasksDescription": "येथे आपण पाहू शकता की आपल्याला कोणती कार्ये सोपवलेली आहेत.",
+    "acceptedTasksDescription": "येथे आपण पाहू शकता की आपण कोणती कार्ये स्वीकारलेली आहेत.",
+    "completedTasksDescription": "येथे आपण पाहू शकता की आपण कोणती कार्ये पूर्ण केली आहेत.",
+    "dashboard": "डॅशबोर्ड",
+    "services": "सेवांसाठी",
+    "chat": "चॅट",
+    "profile": "प्रोफाइल",
+    "logout": "लॉगआउट"
+  },
+  "tabs": {
+    "tabBar": {
+      "dashboard": "डॅशबोर्ड",
+      "services": "सेवांसाठी",
+      "chat": "चॅट",
+      "profile": "प्रोफाइल"
+    }
+  },
+  "validation": {
+    "nameMin": "नाव कमीत कमी 5 अक्षरे असावे",
+    "nameMax": "नाव 25 अक्षरे ओलांडू शकत नाही",
+    "nameRequired": "नाव आवश्यक आहे",
+    "phoneNumberFormat": "फोन नंबर 10 अंकांचा असावा",
+    "phoneNumberRequired": "फोन नंबर आवश्यक आहे"
+  },
+  "dashboard": {
+    "title": "डॅशबोर्ड",
+    "searchPlaceholder": "येथे शोधा...",
+    "rupeeIcon": "रुपया",
+    "micIcon": "मायक्रोफोन"
+  },
+  "otp_verification": {
+    "title": "ओटीपी टाका",
+    "incorrect_otp": "चुकीचा ओटीपी",
+    "verification_failed": "सत्यापन अयशस्वी झाले. कृपया पुन्हा प्रयत्न करा.",
+    "enter_6_digit_otp": "कृपया 6 अंकी ओटीपी टाका",
+    "failed_to_resend_otp": "ओटीपी पुन्हा पाठवण्यात अयशस्वी"
+  },
+  "signUp": {
+    "title": "साइन अप करा",
+    "nameLabel": "नाव",
+    "namePlaceholder": "आपले नाव टाका",
+    "nameError": "नाव कमीत कमी 5 अक्षरे असावे",
+    "phoneLabel": "फोन नंबर",
+    "phonePlaceholder": "आपला फोन नंबर टाका",
+    "phoneError": "फोन नंबर निश्चितपणे 10 अंकांचा असावा",
+    "submitButton": "सादर करा",
+    "alreadyHaveAccount": "आधीच एक खाता आहे? लॉग इन करा",
+    "notificationAlreadyRegistered": "हा नंबर आधीच नोंदलेला आहे."
+  },
+  "login": {
+    "title": "लॉग इन करा",
+    "phoneNumberLabel": "फोन नंबर",
+    "phoneNumberPlaceholder": "आपला फोन नंबर टाका",
+    "loginButton": "लॉग इन करा",
+    "alreadyHaveAccount": "आपल्याकडे एक खाता नाही का? साइन इन करा",
+    "error": "लॉगिन अयशस्वी झाले. कृपया पुन्हा प्रयत्न करा.",
+    "phoneNumberError": "फोन नंबर निश्चितपणे 10 अंकांचा असावा"
+  },
+  "profile": {
+    "title": "प्रोफाइल",
+    "workReport": "कार्य अहवाल",
+    "aboutUs": "आमच्या विषयी",
+    "contactUs": "आमच्याशी संपर्क साधा"
+  },
+  "myProfile": {
+    "pickAvatar": "अवतार निवडा",
+    "namePlaceholder": "नाव",
+    "emailPlaceholder": "ई-मेल (ऐच्छिक)",
+    "phonePlaceholder": "फोन नंबर",
+    "localityPlaceholder": "स्थानिकता",
+    "cityPlaceholder": "शहर",
+    "statePlaceholder": "राज्य",
+    "countryPlaceholder": "देश",
+    "saveProfile": "प्रोफाइल जतन करा",
+    "errorTitle": "चुक",
+    "errorToken": "वापरकर्ता टोकन सापडला नाही.",
+    "errorUpdate": "प्रोफाइल अपडेट करण्यात अयशस्वी.",
+    "successTitle": "यश",
+    "successMessage": "प्रोफाइल यशस्वीरित्या अपडेट केली."
+  },
+  "aboutUs": {
+    "description": "आम्ही एक कंपनी आहोत जी असाधारण सेवा आणि उत्पादने प्रदान करण्यासाठी समर्पित आहे. आमचा उद्देश म्हणजे आमच्या कार्याद्वारे जगात सकारात्मक परिणाम साधणे. आम्ही नवकल्पक उपाय प्रदान करून आणि गुणवत्ता मानकांचे उच्चतम स्तर राखून ग्राहकांच्या अपेक्षा ओलांडण्याचा प्रयत्न करतो. आमच्या तज्ञांची टीम त्यांच्या कामावर उत्साही आहे आणि आम्ही यश प्राप्त करण्यासाठी सहकार्य आणि सर्जनशीलतेच्या शक्तीवर विश्वास ठेवतो. आमच्याबरोबर सामील व्हा ज्या वेळी आम्ही वाढत आहोत आणि एक महत्त्वपूर्ण बदल घडविण्यासाठी प्रयत्न करीत आहोत."
+  },
+  "contactUs": {
+    "placeholder": "तुमचा संदेश",
+    "send": "पाठवा"
+  },
+  "onboarding": {
+    "find_person": "कामासाठी कुणाला शोधण्यात अयशस्वी",
+    "work_new_places": "नव्या ठिकाणी काम करण्याची इच्छा",
+    "digital_confidence": "डिजिटल तंत्रज्ञानावर विश्वास नाही"
+  },
+  "myServices": {
+    "services": {
+      "headerText": "सेवांसाठी",
+      "searchPlaceholder": "सेवांचा शोध घ्या...",
+      "addNewService": "नवीन सेवा जोडा",
+      "serviceName": "नाव",
+      "serviceDescription": "वर्णन",
+      "noServicesText": "आतापर्यंत कोणतीही सेवा जोडलेली नाही.",
+      "deleteConfirmation": "तुम्हाला ही सेवा हटवायची आहे का?",
+      "confirm": "होय",
+      "cancel": "नाही"
+    },
+    "buttons": {
+      "addService": "नवीन सेवा जोडा",
+      "editService": "संपादित करा",
+      "deleteService": "काढा",
+      "mic": "मायक्रोफोन"
+    },
+    "modal": {
+      "deleteConfirmation": "तुम्हाला खात्री आहे का की तुम्ही ही सेवा काढू इच्छिता?"
+    },
+    "loading": {
+      "loadingMessage": "सेवांचा लोड होत आहे..."
+    }
+  }
+}

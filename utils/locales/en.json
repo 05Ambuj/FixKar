@@ -1,0 +1,127 @@
+{
+  "common": {
+    "verify_otp": "Verify OTP",
+    "resend_otp": "Resend OTP",
+    "in": "in",
+    "search": "Search...",
+    "assignedTasks": "Assigned Tasks",
+    "acceptedTasks": "Accepted Tasks",
+    "completedTasks": "Completed Tasks",
+    "assignedTasksDescription": "Here you can see the tasks that have been assigned to you.",
+    "acceptedTasksDescription": "Here you can see the tasks that you have accepted.",
+    "completedTasksDescription": "Here you can see the tasks that you have completed.",
+    "dashboard": "Dashboard",
+    "services": "Services",
+    "chat": "Chat",
+    "profile": "Profile",
+    "logout": "Log Out"
+  },
+  "tabs": {
+    "tabBar": {
+      "dashboard": "Dashboard",
+      "services": "Services",
+      "chat": "Chat",
+      "profile": "Profile"
+    }
+  },
+  "validation": {
+    "nameMin": "The name must be at least 5 characters long",
+    "nameMax": "The name cannot exceed 25 characters",
+    "nameRequired": "Name is required",
+    "phoneNumberFormat": "The phone number must be 10 digits long",
+    "phoneNumberRequired": "Phone number is required"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "searchPlaceholder": "Search here...",
+    "rupeeIcon": "Rupee",
+    "micIcon": "Microphone"
+  },
+  "otp_verification": {
+    "title": "Enter OTP",
+    "incorrect_otp": "Incorrect OTP",
+    "verification_failed": "Verification failed. Please try again.",
+    "enter_6_digit_otp": "Please enter a 6-digit OTP",
+    "failed_to_resend_otp": "Failed to resend OTP"
+  },
+  "signUp": {
+    "title": "Sign Up",
+    "nameLabel": "Name",
+    "namePlaceholder": "Enter your name",
+    "nameError": "Name must be at least 5 characters long",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "Enter your phone number",
+    "phoneError": "Phone number must be exactly 10 digits",
+    "submitButton": "Submit",
+    "alreadyHaveAccount": "Already have an account? Log In",
+    "notificationAlreadyRegistered": "This number is already registered."
+  },
+  "login": {
+    "title": "Log In",
+    "phoneNumberLabel": "Phone Number",
+    "phoneNumberPlaceholder": "Enter your phone number",
+    "loginButton": "Log In",
+    "alreadyHaveAccount": "Don't have an account? Sign In",
+    "error": "Login failed. Please try again.",
+    "phoneNumberError": "Phone number must be exactly 10 digits"
+  },
+  "profile": {
+    "title": "Profile",
+    "workReport": "Work Report",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us"
+  },
+  "myProfile": {
+    "pickAvatar": "Pick Avatar",
+    "namePlaceholder": "Name",
+    "emailPlaceholder": "Email (optional)",
+    "phonePlaceholder": "Phone Number",
+    "localityPlaceholder": "Locality",
+    "cityPlaceholder": "City",
+    "statePlaceholder": "State",
+    "countryPlaceholder": "Country",
+    "saveProfile": "Save Profile",
+    "errorTitle": "Error",
+    "errorToken": "User token not found.",
+    "errorUpdate": "Failed to update profile.",
+    "successTitle": "Success",
+    "successMessage": "Profile updated successfully."
+  },
+  "aboutUs": {
+    "description": "We are a company dedicated to providing exceptional services and products. Our mission is to make a positive impact in the world through our work. We strive to exceed customer expectations by delivering innovative solutions and maintaining the highest standards of quality. Our team of experts is passionate about what they do, and we believe in the power of collaboration and creativity to drive success. Join us on our journey as we continue to grow and make a meaningful difference."
+  },
+    "contactUs": {
+    "placeholder": "Your message",
+    "send": "Send"
+  },
+  "onboarding": {
+    "find_person": "Unable to find someone for the job",
+    "work_new_places": "Desire to work in new places",
+    "digital_confidence": "No confidence in digital technology"
+  },
+  "myServices": {
+    "services": {
+      "headerText": "Services",
+      "searchPlaceholder": "Search services...",
+      "addNewService": "Add New Service",
+      "serviceName": "Name",
+      "serviceDescription": "Description",
+      "noServicesText": "No services added yet.",
+      "deleteConfirmation": "Are you sure you want to delete this service?",
+      "confirm": "Yes",
+      "cancel": "No"
+    },
+    "buttons": {
+      "addService": "Add New Service",
+      "editService": "Edit",
+      "deleteService": "Delete",
+      "mic": "Mic"
+    },
+    "modal": {
+      "deleteConfirmation": "Are you sure you want to delete this service?"
+    },
+    "loading": {
+      "loadingMessage": "Loading services..."
+    }
+  }
+}
