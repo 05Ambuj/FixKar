@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, TextInput, Text, StyleSheet, TouchableOpacity, Animated, Easing, ScrollView, Dimensions } from 'react-native';
+import { View, TextInput, Text, StyleSheet, TouchableOpacity, Animated, Easing, ScrollView, Dimensions, ActivityIndicator } from 'react-native';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
@@ -21,6 +21,7 @@ const LogIn = ({ navigation }) => {
   const { t } = useTranslation();
 
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false); // Loading state
   const [fadeAnim] = useState(new Animated.Value(0)); // Initial opacity is 0
 
   // Animation setup
@@ -34,6 +35,7 @@ const LogIn = ({ navigation }) => {
   }, [fadeAnim]);
 
   const handleSubmit = async (values) => {
+    setLoading(true); // Set loading to true when submitting
     values.phoneNumber = `+91${values.phoneNumber}`;
     console.log('values', values);
     const { phoneNumber } = values;
@@ -49,13 +51,23 @@ const LogIn = ({ navigation }) => {
         await setItem('user', newUser);
         router.push({ pathname: "/OtpVerification" }); // Redirect to OTP Verification page
       } else {
-        router.push({ pathname: "/userRegistered" }) // Redirect to User Registered page if not found
+        router.push({ pathname: "/userRegistered" }); // Redirect to User Registered page if not found
       }
     } catch (err) {
       console.log(err);
       setError(t('login.error'));
+    } finally {
+      setLoading(false); // Stop loading after response is received
     }
   };
+
+  if (loading) {
+    return (
+      <View style={styles.loadingContainer}>
+        <ActivityIndicator size="large" color="#003B5C" />
+      </View>
+    );
+  }
 
   return (
     <ScrollView contentContainerStyle={styles.scrollContainer}>
@@ -91,9 +103,13 @@ const LogIn = ({ navigation }) => {
                 <Text style={styles.errorText}>{t('login.phoneNumberError')}</Text>
               )}
 
-              {/* Submit Button */}
-              <TouchableOpacity style={styles.button} onPress={handleSubmit}>
-                <Text style={styles.buttonText}>{t('login.loginButton')}</Text>
+              {/* Submit Button or Loading Spinner */}
+              <TouchableOpacity style={styles.button} onPress={handleSubmit} disabled={loading}>
+                {loading ? (
+                  <ActivityIndicator size="small" color="#FFFFFF" /> // Show spinner if loading
+                ) : (
+                  <Text style={styles.buttonText}>{t('login.loginButton')}</Text>
+                )}
               </TouchableOpacity>
 
               {/* Show API error */}
@@ -114,6 +130,11 @@ const LogIn = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({
+  loadingContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
   scrollContainer: {
     flexGrow: 1, // Ensure scroll view grows to fill container
     justifyContent: 'center',

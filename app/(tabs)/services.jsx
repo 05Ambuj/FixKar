@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState,useCallback } from "react";
 import {
   StyleSheet,
   Text,
@@ -7,22 +7,22 @@ import {
   FlatList,
   TextInput,
   Modal,
-  ActivityIndicator,
+  ActivityIndicator
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import { useFocusEffect } from "@react-navigation/native";
 import debounce from "lodash.debounce";
 import { useTranslation } from "react-i18next"; // Import translation hook
+import { getItem } from "../../utils/AsyncStorage";
 
 const Services = () => {
-  const { t } = useTranslation(); // Initialize translation
+  const { t } = useTranslation(); 
   const [services, setServices] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [loading, setLoading] = useState(true);
   const [modalVisible, setModalVisible] = useState(false);
-  const [serviceToDelete, setServiceToDelete] = useState(null);
-
+  const [serviceToDelete, setServiceToDelete] = useState(null); // Store the service to delete
   const router = useRouter();
 
   const handleSearchChange = debounce((text) => {
@@ -30,12 +30,18 @@ const Services = () => {
   }, 300);
 
   const fetchServices = async () => {
+    const token = await getItem("token");
     try {
       const response = await fetch(
-        "https://fixkar-services-api-1.onrender.com/api/services/"
+        "https://fixkar.onrender.com/provider/getAllServices",
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
       );
       const data = await response.json();
-      setServices(data);
+      setServices(data.services);
     } catch (error) {
       console.error("Error fetching services:", error);
     } finally {
@@ -61,41 +67,50 @@ const Services = () => {
   };
 
   const goToEditService = (service) => {
+    console.log("goToEditService", service._id);
     router.push({
       pathname: "../components/editService",
-      params: { service },
+      params: {serviceId: service._id},
     });
   };
 
   const confirmDelete = (service) => {
-    setServiceToDelete(service);
-    setModalVisible(true);
+    setServiceToDelete(service); // Set the selected service to delete
+    setModalVisible(true); // Show the confirmation modal
   };
 
   const deleteService = async () => {
-    if (!serviceToDelete) return;
+    const token = await getItem("token");
 
     try {
-      await fetch(
-        `https://fixkar-services-api-1.onrender.com/api/services/deleteService/${serviceToDelete._id}`,
-        { method: "DELETE" }
+      const response = await fetch(
+        `https://fixkar.onrender.com/deleteService/${serviceToDelete._id}`,
+        {
+          method: "DELETE",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
       );
 
-      setServices((prevServices) =>
-        prevServices.filter((service) => service._id !== serviceToDelete._id)
-      );
+      if (response.status === 200) {
+        // If deletion is successful, remove the service from the list
+        setServices((prevServices) =>
+          prevServices.filter((service) => service._id !== serviceToDelete._id)
+        );
+        setModalVisible(false); // Close the modal
+      } else {
+        console.error("Failed to delete service:", await response.json());
+      }
     } catch (error) {
       console.error("Error deleting service:", error);
-    } finally {
-      setModalVisible(false);
-      setServiceToDelete(null);
     }
   };
 
-  const goToServiceDetail = (service) => {
+  const goToServiceDetail = (serviceId) => {
     router.push({
-      pathname: "../components/EditService",
-      params: { service },
+      pathname: "../components/ViewService",
+      params: { serviceId: serviceId}, // Pass service ID as a query parameter
     });
   };
 
@@ -138,7 +153,7 @@ const Services = () => {
         renderItem={({ item }) => (
           <TouchableOpacity
             style={styles.serviceItem}
-            onPress={() => goToServiceDetail(item)}
+            onPress={() => goToServiceDetail(item._id)}
           >
             <View style={styles.serviceTextContainer}>
               <Text style={styles.serviceText}>{item.name}</Text>
@@ -199,6 +214,7 @@ const Services = () => {
 };
 
 export default Services;
+
 
 
 

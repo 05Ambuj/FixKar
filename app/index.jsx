@@ -8,10 +8,10 @@ import LanguageSelection from './components/LanguageSelection'; // Adjust path i
 const App = () => {
   return (
     // <Landing/>
-    <LanguageSelection/>
-    // <SafeAreaView className='flex-1 justify-center items-center bg-blue'>
-    //   <Link href='/dashboard' className='color'  >Go to Dashboard</Link>
-    // </SafeAreaView> 
+    // <LanguageSelection/>
+    <SafeAreaView className='flex-1 justify-center items-center bg-blue'>
+      <Link href='/dashboard' className='color'  >Go to Dashboard</Link>
+    </SafeAreaView> 
   )
 }
 

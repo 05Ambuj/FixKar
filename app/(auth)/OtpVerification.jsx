@@ -91,7 +91,7 @@ const OtpVerification = () => {
                     console.log('User verified. Navigating to Dashboard.');
 
                     await setItem('token', response.data.token);
-                    const token = await getItem('token', response.data.token);
+                    const token = await getItem('token');
                     console.log("token", token);
                     
                     await removeItem('user');
